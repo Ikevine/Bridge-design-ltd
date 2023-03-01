@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.navBefore::before{
+  
+  content:"";
+  @apply h-6 w-6 absolute bg-yellow-100 top-0 right-4 rotate-45
+}
