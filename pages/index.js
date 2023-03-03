@@ -1,4 +1,4 @@
-import { Hero , Show , Testimonial , Brand} from "@/components"
+import { Hero , Show , Testimonial , Brand ,TeamMemb ,Experiance} from "@/components"
 
 export default function Home() {
   return (
@@ -7,6 +7,8 @@ export default function Home() {
      <Show/>
      <Testimonial/>
      <Brand/>
+     <TeamMemb/>
+     <Experiance/>
     </>
   )
 }
