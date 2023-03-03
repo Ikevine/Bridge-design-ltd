@@ -25,12 +25,12 @@ const Hero =() => {
     >
       <SwiperSlide>
          <div className="relative top-0 right-0 bottom-0 left-0 w-screen h-screen ">
-            <Image src="/love.jfif" alt="slide-image" layout='fill' objectFit='cover'  className='bg-cente'/>
+            <Image src="/tiger.jpg" alt="slide-image" layout='fill' objectFit='cover'  className='bg-cente'/>
              <div className="absolute bg-black/70 top-0 right-0 bottom-0 left-0 flex flex-col justify-center px-20 ">
               <motion.div 
                 initial={{opacity:0, x:1000}}
                 transition={{duration:2,}}
-                whileInView={{opacity:1, x:0}}
+                whileInView={{opacity:1, x:0, type:'tween'}}
 
               className="w-[60%] flex flex-col space-y-4 justify-center items-center">
                 <h1 className='text-white  font-semibold text-center text-4xl tracking-wide'>Good and smart thing mean independ and clear feature we like to have you all so welcome to <span >BRIDGE DESIGN</span></h1>
