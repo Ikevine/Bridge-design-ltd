@@ -9,5 +9,13 @@ body{
 .navBefore::before{
   
   content:"";
-  @apply h-6 w-6 absolute bg-yellow-100 top-0 right-4 rotate-45
+  @apply h-6 w-6 absolute bg-orange-400 top-[-0.7rem] md:left-[42%] rotate-45;
+}
+
+.btn_hover:hover{
+
+  background-color: white;
+  border: 2px solid;
+  color: black;
+  @apply border-orange-400
 }
