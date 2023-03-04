@@ -25,7 +25,7 @@ const Hero =() => {
     >
       <SwiperSlide>
          <div className="relative top-0 right-0 bottom-0 left-0 w-screen h-screen ">
-            <Image src="/tiger.jpg" alt="slide-image" layout='fill' objectFit='cover'  className='bg-cente'/>
+            <Image src="/tiger.jpg" alt="slide-image" layout='fill' objectFit='cover'  className='bg-center'/>
              <div className="absolute bg-black/70 top-0 right-0 bottom-0 left-0 flex flex-col justify-center  px-20 ">
               <motion.div 
                 initial={{opacity:0, x:1000}}

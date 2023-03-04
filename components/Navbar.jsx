@@ -46,7 +46,7 @@ const Navbar = () => {
                 <Link href="/">
                   <li className='font-medium normal text-md ease-linear duration-300  hover:text-orange-400'>Home</li>
                 </Link>
-                <Link href="/">
+                <Link href="/about">
                   <li className='font-medium normal text-md ease-linear duration-300 hover:text-orange-400'>About us</li>
                 </Link>
                 <Link href="/">
@@ -98,7 +98,7 @@ const Navbar = () => {
                     </Menu>              
                   {/* </li> */}
                 </Link>
-                <Link href="/">
+                <Link href="/contact">
                   <li className='font-medium normal text-md ease-linear duration-300  hover:text-orange-400'>Contact us</li>
                 </Link>
            </ul>
@@ -164,7 +164,7 @@ const Navbar = () => {
                     </Menu>              
                   {/* </li> */}
                 </Link>
-                <Link href="/">
+                <Link href="/contact">
                   <li className='font-medium  normal text-md ease-linear duration-300   hover:text-orange-400 text-xl'>Contact us</li>
                 </Link>
             </ul>              
