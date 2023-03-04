@@ -10,7 +10,7 @@ const Navbar = () => {
    const showNav = () => setNav(!nav);
 
    const [textcolor, setTextcolor] = useState("white");
-   const [bgcolor, setBgcolor] = useState("transparent");
+   const [bgcolor, setBgcolor] = useState("black");
 
 
   useEffect(() => {
@@ -18,12 +18,12 @@ const Navbar = () => {
     const ChangeColor = ()=>{
       if(window.scrollY >= 90)
       {
-        setBgcolor("white");
-        setTextcolor("black");
+        setBgcolor("#7A3B00");
+        setTextcolor("white");
       }
       else
       {
-        setBgcolor("transparent");
+        setBgcolor("black");
         setTextcolor("white");
       }
     }
@@ -87,7 +87,7 @@ const Navbar = () => {
                             {({ active }) => (
                                 <Link
                                 className={`${active && 'font-medium normal text-md ease-linear duration-300  hover:text-orange-400'}`}
-                                href="/"
+                                href="/gift"
                                 >
                                 Gift Making
                                 </Link>
@@ -153,7 +153,7 @@ const Navbar = () => {
                             {({ active }) => (
                                 <Link
                                 className={`${active && 'font-medium  normal text-md ease-linear duration-300   hover:text-orange-400'}`}
-                                href="/"
+                                href="/gift"
                                 >
                                 Gift Making
                                 </Link>
