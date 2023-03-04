@@ -1,4 +1,4 @@
-import { Hero , Show , Testimonial , Brand ,TeamMemb ,Experiance} from "@/components"
+import { Hero , Show , Testimonial , Brand ,TeamMemb ,Experiance , Ghead ,Machine , Gwedo ,Gprod ,Dpost} from "@/components"
 
 export default function Home() {
   return (
@@ -9,6 +9,11 @@ export default function Home() {
      <Brand/>
      <TeamMemb/>
      <Experiance/>
+     <Ghead/>
+     <Machine/>
+     <Gwedo/>
+     <Gprod/>
+     <Dpost/>
     </>
   )
 }

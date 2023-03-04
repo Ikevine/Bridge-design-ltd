@@ -18,6 +18,8 @@ const Experiance = () => {
                 </div>
             </div>
         </div>
+        {/* machines available */}
+        
     </div>
   )
 }
