@@ -77,6 +77,16 @@ const Navbar = () => {
                             {({ active }) => (
                                 <Link
                                 className={`${active && 'font-medium normal text-md ease-linear duration-300  hover:text-orange-400'}`}
+                                href="/decoration"
+                                >
+                                 Decoration
+                                </Link>
+                            )}
+                            </Menu.Item>
+                            <Menu.Item>
+                            {({ active }) => (
+                                <Link
+                                className={`${active && 'font-medium normal text-md ease-linear duration-300  hover:text-orange-400'}`}
                                 href="/"
                                 >
                                 Promotion materials
