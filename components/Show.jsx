@@ -3,7 +3,7 @@ import Image from 'next/legacy/image'
 import { motion } from 'framer-motion'
 const Show = () => {
   return (
-    <motion.div 
+  <motion.div 
     whileHover={{scale:1.1}}
     transition={{duration:1.1 ,type:'tween' }}
     className='drop-shadow-2xl bg-white p-4 w-64 h-[72] border m-10  flex flex-col space-y-4 rounded-lg'>
