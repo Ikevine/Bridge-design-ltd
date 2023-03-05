@@ -18,7 +18,7 @@ const Navbar = () => {
     const ChangeColor = ()=>{
       if(window.scrollY >= 90)
       {
-        setBgcolor("#7A3B00");
+        setBgcolor("rgba(0, 0, 0, 0.76)");
         setTextcolor("white");
       }
       else
