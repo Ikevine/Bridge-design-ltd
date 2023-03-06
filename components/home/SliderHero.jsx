@@ -21,7 +21,7 @@ const Hero =() => {
       navigation
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
-      className="h-screen w-screen z-[2]"
+      className="min-h-screen w-screen z-[2]"
     >
       <SwiperSlide>
          <div className="relative top-0 right-0 bottom-0 left-0 w-screen h-screen ">

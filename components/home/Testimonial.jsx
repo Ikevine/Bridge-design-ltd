@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/legacy/image'
 const Testimonial = () => {
   return (
-  <div className='bg-slate-200 p-2 mb-4 '>
+  <div className='bg-slate-200 p-2 mb-4 min-h-screen'>
   <div className="flex flex-col  md:flex-row m-10 space-y-4 md:space-x-12 items-center justify-center">
     <video className='h-80 rounded-lg' controls >
       <source src='' type='video/mp4'/>
