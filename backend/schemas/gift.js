@@ -1,0 +1,46 @@
+export default{
+    name:"gift",
+    title:"Gift",
+    type:"document",
+    fields:[
+        {
+            name:"header",
+            title:"Header",
+            type:"string"
+        },
+        {
+            name:"descr",
+            title:"Descr",
+            type:"block"
+        },
+        {
+            name:"image",
+            title:"Image",
+            type:"image"
+        },
+
+        //showing the product
+        {
+            name:"product",
+            title:"Product",
+            type:"array",
+            of:[
+                {
+                    name:"image",
+                    title:"Image",
+                    type:"image"
+                },
+                {
+                    name:"desc",
+                    title:"Desc",
+                    type:"string"
+                },
+                {
+                    name:"name",
+                    title:"Name",
+                    type:"string"
+                }
+            ]
+        }
+    ]
+}
