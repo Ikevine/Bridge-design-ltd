@@ -1,9 +1,9 @@
 import {Hero , Wedo , Testimonial ,Brand} from "@/components"
-
-export default function Home() {
+import {client } from '../client'
+export default function Home({home}) {
   return (
     <>
-      <Hero/>
+      <Hero home={home}/>
       <Wedo/>
       <Testimonial/>
       <div className="my-4">
@@ -19,4 +19,15 @@ export default function Home() {
       
     </>
   )
+}
+
+export const getServerSideProps = async () => {
+  const query ='*[_type == "home"]';
+  const home = await client.fetch(query);
+
+  return {
+     props:{
+      home,
+  }
+ }
 }
