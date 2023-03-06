@@ -9,9 +9,6 @@ export default
             title:"Slider_image",
             type:"array",
             of:[{type:"image"}],
-            option:{
-
-            }
         },
         {
             name:"intro",
@@ -30,23 +27,7 @@ export default
             name:"wedo",
             title:"Wedo",
             type:"array",
-            of:[
-                {
-                    name:"name",
-                    title:"Name",
-                    type:"string",
-                },
-                {
-                    name:"descr",
-                    title:"Descr",
-                    type:"string",
-                },
-                {
-                    name:"simage",
-                    title:"Simage",
-                    type:"image"
-                }
-            ]
+            of:[{type:"wedo"}]
         },
 
         // testimonial section start here
@@ -54,18 +35,7 @@ export default
             name:"we_are",
             title:"We_are",
             type:"array",
-            of:[
-                {
-                    name:"name",
-                    title:"Name",
-                    type:"string",
-                },
-                {
-                    name:"descr",
-                    title:"Descr",
-                    type:"string"
-                }
-            ]
+            of:[{type:"wera"}]
         },
 
         // testimonial section start here
@@ -74,23 +44,7 @@ export default
             name:"testimonial",
             title:"Testimonial",
             type:"array",
-            of:[
-                {
-                    name:"pname",
-                    title:"Pname",
-                    type:"string",
-                },
-                {
-                    name:"says",
-                    title:"Says",
-                    type:"string"
-                },
-                {
-                    name:"image",
-                    title:"Image",
-                    type:"image"
-                }
-            ]
+            of:[{type:"test"}]
         },
 
         // popular brand work with us
@@ -99,13 +53,7 @@ export default
             name:"brand",
             title:"Brand",
             type:"array",
-            of:[
-                {
-                    name:"single_brand",
-                    title:"Single_brand",
-                    type:"image"
-                }
-            ]
+            of:[{type:"brand"}]
 
         }
         

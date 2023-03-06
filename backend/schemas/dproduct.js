@@ -1,0 +1,22 @@
+export default{
+    name:"dproduct",
+    title:"Dproduct",
+    type:"document",
+    fields:[
+        {
+            name:"image",
+            title:"Image",
+            type:"image"
+        },
+        {
+            name:"desc",
+            title:"Desc",
+            type:"string"
+        },
+        {
+            name:"name",
+            title:"Name",
+            type:"string"
+        }
+    ]
+}

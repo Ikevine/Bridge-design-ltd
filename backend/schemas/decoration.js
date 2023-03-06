@@ -8,9 +8,7 @@ export default{
             title:"Slider_image",
             type:"array",
             of:[{type:"image"}],
-            option:{
 
-            }
         },
         {
             name:"intro",
@@ -28,54 +26,20 @@ export default{
             name:"left",
             title:"Left",
             type:"array",
-            of:[
-                {
-                    name:"dname",
-                    title:"Dname",
-                    type:"string",
-                },
-                {
-                    name:"image",
-                    title:"Image",
-                    type:"image"
-                }
-            ]
+            of:[{type:"product"}]
 
         },
         {
             name:"middle",
             title:"Middle",
             type:"array",
-            of:[
-                {
-                    name:"dname",
-                    title:"Dname",
-                    type:"string",
-                },
-                {
-                    name:"image",
-                    title:"Image",
-                    type:"image"
-                }
-            ]
-
+            of:[{type:"product"}]
         },
         {
             name:"right",
             title:"right",
             type:"array",
-            of:[
-                {
-                    name:"dname",
-                    title:"Dname",
-                    type:"string",
-                },
-                {
-                    name:"image",
-                    title:"Image",
-                    type:"image"
-                }
-            ]
+            of:[{type:"product"}]
         }
    ] 
 }

@@ -8,9 +8,7 @@ export default{
             title:"Slider_image",
             type:"array",
             of:[{type:"image"}],
-            option:{
 
-            }
         },
         {
             name:"intro",
@@ -29,33 +27,7 @@ export default{
             name:"member",
             title:"Member",
             type:"array",
-            of:[
-                {
-                    name:"name",
-                    title:"Name",
-                    type:"string"
-                },
-                {
-                    name:"image",
-                    title:"Image",
-                    type:"image"
-                },
-                {
-                    name:"facebook",
-                    title:"Facebook",
-                    type:"slug"
-                },
-                {
-                    name:"instagram",
-                    title:"Instagram",
-                    type:"slug"
-                },
-                {
-                    name:"whatsapp",
-                    title:"Whatsapp",
-                    type:"slug"
-                },
-            ]
+            of:[{type:"members"}]
         },
 
         //experiance show
@@ -65,8 +37,8 @@ export default{
             type:"string"
         },
         {
-            name:"descr",
-            title:"Descr",
+            name:"edescr",
+            title:"Edescr",
             type:"string"
         },
         
@@ -75,40 +47,13 @@ export default{
             name:"name",
             title:"Name",
             type:"array",
-            of:[
-                {
-                    name:"name",
-                    title:"Name",
-                    type:"string"
-                },
-                {
-                    name:"left",
-                    title:"Left",
-                    type:"image"
-                },
-                {
-                    name:"middle",
-                    title:"Middle",
-                    type:"image"
-                },
-                {
-                    name:"right",
-                    title:"Right",
-                    type:"image"
-                }
-            ]
+            of:[{type:"machine"}]
         },
         {
           name:"office",
           title:"Office",
           type:"array",
-          of:[
-            {
-                name:"image",
-                title:"Image",
-                type:"image"
-            }
-          ] 
+          of:[{type:"image"}] 
         }
     ]
 }

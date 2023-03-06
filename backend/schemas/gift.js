@@ -24,23 +24,7 @@ export default{
             name:"product",
             title:"Product",
             type:"array",
-            of:[
-                {
-                    name:"image",
-                    title:"Image",
-                    type:"image"
-                },
-                {
-                    name:"desc",
-                    title:"Desc",
-                    type:"string"
-                },
-                {
-                    name:"name",
-                    title:"Name",
-                    type:"string"
-                }
-            ]
+            of:[{type:"dproduct"}]
         }
     ]
 }
