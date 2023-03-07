@@ -3,7 +3,7 @@ import {client } from '../client'
 export default function Home({home}) {
   return (
     <>
-      <Hero home={home}/>
+      <Hero shome={home}/>
       <Wedo/>
       <Testimonial/>
       <div className="my-4">
@@ -27,7 +27,7 @@ export const getServerSideProps = async () => {
 
   return {
      props:{
-      home,
+     home,
   }
  }
 }

@@ -11,7 +11,15 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 
-const Hero =({home}) => {
+const Hero =({shome}) => {
+//  {shome.map((data)=>{
+//     return(
+//      <h1>
+//        hellow {console.log(data.intro)}
+//      </h1>
+//     )
+//   })
+// }
   return (
     <Swiper
       // install Swiper m odules
@@ -33,9 +41,8 @@ const Hero =({home}) => {
                 whileInView={{opacity:1, x:0, type:'tween'}}
 
               className="md:w-[60%] flex flex-col md:space-y-8 space-y-6 justify-center md:items-center">
-                <h1 className='text-white  font-semibold md:text-4xl text-2xl tracking-wide md:text-center'>{home.intro}<span>BRIDGE DESIGN</span></h1>
-                {console.log(home.descr)}
-                <p className='text-slate-400 md:ml-10 ml-4 text-sm md:text-lg text-center md:text-start'>{home.descr}</p>
+                <h1 className='text-white  font-semibold md:text-4xl text-2xl tracking-wide md:text-center'><span>BRIDGE DESIGN</span></h1>
+                <p className='text-slate-400 md:ml-10 ml-4 text-sm md:text-lg text-center md:text-start'></p>
                  
                  <button className='px-16 py-4 self-center  text-white bg-orange-400 w-fit rounded-md ease-in duration-500 btn_hover text-[1rem]'>Contact us</button>
               </motion.div> 
