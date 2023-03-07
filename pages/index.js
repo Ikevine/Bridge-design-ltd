@@ -1,6 +1,6 @@
 import {Hero , Wedo , Testimonial ,Brand} from "@/components"
 import {client } from '../client'
-export default function Home({home , wedod}) {
+export default function Home({home}) {
   return (
     <>
     {/* // */}
@@ -45,12 +45,10 @@ export const getServerSideProps = async () => {
   const query ='*[_type == "home"]';
   const home = await client.fetch(query);
 
-  const wedoQuery ='*[_type == "wedo"]';
-  const wedod = await client.fetch(query);
 
   return {
      props:{
-     home,wedod
+     home,
   }
  }
 }
