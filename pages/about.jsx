@@ -1,6 +1,6 @@
 import React from 'react'
 import {Hero ,TeamMemb ,Experiance} from "@/components"
-const about = () => {
+const About = () => {
   return (
     <>
       <Hero/>
@@ -13,4 +13,4 @@ const about = () => {
   )
 }
 
-export default about
+export default About

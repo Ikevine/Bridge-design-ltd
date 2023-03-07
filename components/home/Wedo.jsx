@@ -1,23 +1,23 @@
 import React from 'react'
-import Show from '../Show'
-const Wedo = () => {
+import Image from 'next/legacy/image'
+import { motion } from 'framer-motion'
+import { urlFor } from '@/client'
+const Wedo = ({datas:{name , simage , descr}}) => {
   return (
-    <div className='p-4 flex  flex-col justify-center items-center min-h-screen'>
-      <div className="text-center">
-         <h1 className='font-semibold text-xl capitalize p-2'>Services we provide</h1>
-         <p className='text-slate-800 text-center'>Lorem we do it ipsum dolor sit amet consectetur adipisicing elit. Perferendis aut minima odit expedita, delectus sequi.</p>
-       </div>
-      <div className='grid md:grid-cols-3 grid-rows-1 max-w-[60%] mx-auto'>
-       <Show/>
-       <Show/>
-       <Show/>
-       <Show/>
-       <Show/>
-       <Show/>
+    <motion.div 
+      whileHover={{scale:1.1}}
+      transition={{duration:1.1 ,type:'tween' }}
+      className='drop-shadow-2xl bg-white p-4 w-64 h-[72] border m-10  flex flex-col space-y-4 rounded-lg'>
+      <div className='relative h-36'>
+          <img src={urlFor(simage)} alt="what we do" layout='fill'  className=' absolute  rounded-lg bg-cover'/>
       </div>
-    </div>
-    
+      <div className='flex flex-col space-y-2'>
+        <h4 className='text-center font-bold '>{name}</h4>
+        <p className='text-slate-900'>{descr}</p>
+      </div> 
+    </motion.div>
   )
 }
 
 export default Wedo
+

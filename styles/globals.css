@@ -4,7 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
 body{
   font-family: 'Open Sans', sans-serif;
-   @apply bg-slate-100 overflow-x-hidden;
+   @apply bg-slate-100 overflow-x-hidden m-0 p-0;
+   
 }
 
 .navBefore::before{

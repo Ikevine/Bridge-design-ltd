@@ -1,6 +1,6 @@
 import React from 'react'
 import {Hero , Dpost} from "@/components"
-const decoration = () => {
+const Decoration = () => {
   return (
     <div>
       <Hero/>
@@ -9,4 +9,4 @@ const decoration = () => {
   )
 }
 
-export default decoration
+export default Decoration

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Ghead , Dpost } from '@/components'
-const printing = () => {
+const Printing = () => {
   return (
     <div className='mt-24'>
         <Ghead/>
@@ -9,4 +9,4 @@ const printing = () => {
   )
 }
 
-export default printing
+export default Printing

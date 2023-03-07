@@ -10,16 +10,9 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
+import { urlFor } from '@/client';
 
-const Hero =({shome}) => {
-//  {shome.map((data)=>{
-//     return(
-//      <h1>
-//        hellow {console.log(data.intro)}
-//      </h1>
-//     )
-//   })
-// }
+const Hero =({shome:{intro , descr , slider_image}}) => {
   return (
     <Swiper
       // install Swiper m odules
@@ -29,26 +22,32 @@ const Hero =({shome}) => {
       navigation
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
-      className="min-h-screen w-screen z-[2]"
+      className="min-h-screen  z-[2] bg-black"
     >
-      <SwiperSlide>
-         <div className="relative top-0 right-0 bottom-0 left-0 w-screen h-screen ">
-            <Image src="/tiger.jpg" alt="slide-image" layout='fill' objectFit='cover'  className='bg-center'/>
-             <div className="absolute bg-black/70 top-0 right-0 bottom-0 left-0 flex flex-col justify-center  px-20 ">
-              <motion.div 
-                initial={{opacity:0, x:1000}}
-                transition={{duration:2,}}
-                whileInView={{opacity:1, x:0, type:'tween'}}
-
-              className="md:w-[60%] flex flex-col md:space-y-8 space-y-6 justify-center md:items-center">
-                <h1 className='text-white  font-semibold md:text-4xl text-2xl tracking-wide md:text-center'><span>BRIDGE DESIGN</span></h1>
-                <p className='text-slate-400 md:ml-10 ml-4 text-sm md:text-lg text-center md:text-start'></p>
-                 
-                 <button className='px-16 py-4 self-center  text-white bg-orange-400 w-fit rounded-md ease-in duration-500 btn_hover text-[1rem]'>Contact us</button>
-              </motion.div> 
-             </div>
-         </div>
-      </SwiperSlide>
+      {
+        slider_image && slider_image.map((img)=>{
+          return(
+            <SwiperSlide key={img._key}>
+            <div className="relative top-0 right-0 bottom-0 left-0  h-screen">
+               <img src={urlFor(img)} alt="slide-image"  className='bg-origin-border absolute bg-cover bg-no-repeat bg-center h-screen w-full'/>
+                <div className="absolute bg-black/70 top-0 right-0 bottom-0 left-0 flex flex-col justify-center  px-20 ">
+                 <motion.div 
+                   initial={{opacity:0, x:1000}}
+                   transition={{duration:2,}}
+                   whileInView={{opacity:1, x:0, type:'tween'}}
+   
+                 className="md:w-[60%] flex flex-col md:space-y-8 space-y-6 justify-center md:items-center">
+                   <h1 className='text-white  font-semibold md:text-4xl text-2xl tracking-wide md:text-center'>{intro}<span>BRIDGE DESIGN</span></h1>
+                   <p className='text-slate-400 md:ml-10 ml-4 text-sm md:text-lg text-center md:text-start'>{descr}</p>
+                    
+                    <button className='px-16 py-4 self-center  text-white bg-orange-400 w-fit rounded-md ease-in duration-500 btn_hover text-[1rem]'>Contact us</button>
+                 </motion.div> 
+                </div>
+            </div>
+         </SwiperSlide>
+          )
+        })
+      }
     </Swiper>
  );
 };

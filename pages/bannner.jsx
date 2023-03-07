@@ -1,6 +1,6 @@
 import React from 'react'
 import { Hero } from '@/components'
-const bannner = () => {
+const Bannner = () => {
   return (
     <div>
         <Hero/>
@@ -9,4 +9,4 @@ const bannner = () => {
   )
 }
 
-export default bannner
+export default Bannner

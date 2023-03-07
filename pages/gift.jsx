@@ -1,6 +1,6 @@
 import React from 'react'
 import { Ghead , Gwedo , Gprod } from '@/components'
-const gift = () => {
+const Gift = () => {
   return (
     <div className='mt-24'>
        <Ghead/>
@@ -10,4 +10,4 @@ const gift = () => {
   )
 }
 
-export default gift
+export default Gift

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Hero ,  } from '@/components'
-const sticker = () => {
+const Sticker = () => {
   return (
     <div>
         <Hero/>
@@ -8,4 +8,4 @@ const sticker = () => {
   )
 }
 
-export default sticker
+export default Sticker

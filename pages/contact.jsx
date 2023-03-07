@@ -1,6 +1,6 @@
 import React from 'react'
 import { Contact } from "@/components"
-const contact = () => {
+const Contact = () => {
   return (
     <div className='bg-black'>
       <Contact/>  
@@ -8,4 +8,4 @@ const contact = () => {
   )
 }
 
-export default contact
+export default Contact
