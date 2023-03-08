@@ -3,7 +3,7 @@ import { urlFor } from '@/client'
 const Machine = ({data:{name,left , middle , right}}) => {
   return (
    <div className="">
-      <h1 className='capitalize font-semibold text-xl text-orange-400 text-start my-4'>{name}</h1>
+      <h1 className='capitalize font-semibold text-xl text-orange-400 text-center my-4'>{name}</h1>
       <div className="max-w-4xl flex mx-auto space-x-4 m-10 justify-center items-center">
          <div className=" relative ">
             <img src={urlFor(left)} alt='machine available' layout='fill'  className='object-cover rounded-lg w-56 h-56 flex-auto'/>
