@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/legacy/image'
 import { motion } from 'framer-motion'
 import { urlFor } from '@/client'
 const Wedo = ({datas:{name , simage , descr}}) => {

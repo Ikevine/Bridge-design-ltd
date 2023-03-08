@@ -1,9 +1,9 @@
 import React from 'react'
-import Image from 'next/legacy/image'
-const Brand = () => {
+import { urlFor } from '@/client'
+const Brand = ({data:{single_brand}}) => {
   return (
     <div className='relative m-10 h-28 w-60 '>
-       <Image src='/tiger.jpg' alt='brand work with us' layout='fill' objectFit='cover' className='rounded-md'/>
+       <img src={urlFor(single_brand)} alt='brand work with us' layout='fill' className='absolute object-cover rounded-md'/>
     </div>
   )
 }
