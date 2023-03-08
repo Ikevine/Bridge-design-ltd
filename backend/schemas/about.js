@@ -4,13 +4,6 @@ export default{
     type:"document",
     fields:[
         {
-            name:"slider_image",
-            title:"Slider_image",
-            type:"array",
-            of:[{type:"image"}],
-
-        },
-        {
             name:"intro",
             title:"Intro",
             type:"string"
@@ -20,18 +13,16 @@ export default{
             title:"Descr",
             type:"string"
         },
-
-        // end of about head // starting our team members
-
         {
-            name:"member",
-            title:"Member",
+            name:"slider_image",
+            title:"Slider_image",
             type:"array",
-            of:[{type:"members"}]
-        },
+            of:[{type:"image"}],
 
-        //experiance show
-        {
+        },
+        
+         //experiance show
+         {
             name:"header",
             title:"Header",
             type:"string"
@@ -41,11 +32,19 @@ export default{
             title:"Edescr",
             type:"string"
         },
-        
+        // end of about head // starting our team members
+
+        {
+            name:"member",
+            title:"Member",
+            type:"array",
+            of:[{type:"members"}]
+        },
+
         // machine enter
         {
-            name:"name",
-            title:"Name",
+            name:"machine",
+            title:"Machine",
             type:"array",
             of:[{type:"machine"}]
         },
