@@ -4,8 +4,7 @@ import {client } from '../client'
 export default function Home({home}) {
   return (
     <>
-    {/* // */}
-   
+
       <Hero shome={home && home[0]}/>
       <div className='p-4 flex  flex-col justify-center items-center min-h-screen'>
         <div className="text-center">
@@ -27,7 +26,6 @@ export default function Home({home}) {
       </div>
 
       {/* testimonial and objextiver section */}
-
 
       <div className='bg-slate-200 p-2 mb-4 min-h-screen'>
           {/* wera */}
@@ -64,9 +62,6 @@ export default function Home({home}) {
               }
       </div>
 
-
-
-
       <div className="my-4">
         <h1 className="capitalize font-semibold text-center text-2xl text-slate-700">Popular brand work with us</h1>
         <div className="flex justify-between items-center">
@@ -81,7 +76,6 @@ export default function Home({home}) {
           }
         </div>
       </div>
-      {/* ) */}
     </>
   )
 }
