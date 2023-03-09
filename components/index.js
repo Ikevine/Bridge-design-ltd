@@ -9,10 +9,15 @@ export {default as Contact} from './Contact';
 export {default as Ghead} from './Ghead';
 export {default as Gwedo } from './Gwedo';
 export {default as Gprod } from './Gprod';
-export {default as Dpost } from './Dpost';
-export {default as Dlpost} from './Dlarge'
-
+export {default as Contacti} from './Contact'
 // about section
 
 export {default as Ahero } from './about/Ahero';
 export {default as Machine} from './about/Machine';
+
+// decoration page
+
+export {default as Dhome } from './decoration/Dhome';
+export {default as Dproduct} from './decoration/Dproduct';
+export {default as Dmiddle }from './decoration/Dmiddle';
+export {default as Dlarge} from './decoration/Dlarge';

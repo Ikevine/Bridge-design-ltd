@@ -1,7 +1,7 @@
 import React from 'react'
 import Box from './Box'
 import Image from 'next/legacy/image'
-const Contact = () => {
+const Contacti = () => {
   return (
     <div className="relative top-0 right-0 bottom-0 left-0 w-screen h-screen ">
          <Image src="/tiger.jpg" alt="slide-image" layout='fill' objectFit='cover'  className='bg-center'/>
@@ -30,4 +30,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default Contacti

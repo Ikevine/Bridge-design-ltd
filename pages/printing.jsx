@@ -10,3 +10,15 @@ const Printing = () => {
 }
 
 export default Printing
+
+export const getServerSideProps = async () => {
+  const query ='*[_type == "about"]';
+  const about = await client.fetch(query);
+
+
+  return {
+     props:{
+     about,
+  }
+ }
+}
