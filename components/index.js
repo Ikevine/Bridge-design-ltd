@@ -6,9 +6,9 @@ export {default as Brand} from './home/Brand';
 export {default as TeamMemb} from './TeamMemb';
 export {default as Experiance} from './about/Experiance';
 export {default as Contact} from './Contact';
-export {default as Ghead} from './Ghead';
-export {default as Gwedo } from './Gwedo';
-export {default as Gprod } from './Gprod';
+export {default as Ghead} from './gift/Ghead';
+export {default as Gwedo } from './gift/Gwedo';
+export {default as Gprod } from './gift/Gprod';
 export {default as Contacti} from './Contact'
 // about section
 
