@@ -11,7 +11,7 @@ export default{
         {
             name:"descr",
             title:"Descr",
-            type:"block"
+            type:"text"
         },
         {
             name:"image",
