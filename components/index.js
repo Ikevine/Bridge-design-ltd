@@ -27,3 +27,7 @@ export {default as Phead} from './printing/Phead';
 export {default as Plarge } from './printing/Plarge';
 export {default as Pmiddle } from './printing/Pmiddle';
 export {default as Pproduct } from './printing/Pproduct';
+
+// sticker page
+
+export {default as Stab } from './sticker/Stab'

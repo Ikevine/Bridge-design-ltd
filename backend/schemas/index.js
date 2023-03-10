@@ -11,6 +11,9 @@ import product from "./product";
 import testimonial from "./testimonial";
 import wedo from "./wedo";
 import wera from "./wera";
+import sticker from "./Sticker";
+import scate from './Scategories'
 export const schemaTypes = [
-    home,about,decoration,gift,printing,brand,dproduct,machine,member,product,testimonial,wedo,wera
+    home,about,decoration,gift,printing,brand,dproduct,machine,member,product,testimonial,wedo,wera,
+    sticker,scate
 ]

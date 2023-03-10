@@ -49,7 +49,6 @@ const Navbar = () => {
                 <Link href="/about">
                   <li className='font-medium normal text-md ease-linear duration-300 hover:text-orange-400'>About us</li>
                 </Link>
-                <Link href="/">
                     <Menu>
                       <Menu.Button className='font-medium normal text-md ease-linear duration-300 hover:text-orange-400 '>Services</Menu.Button>
                         <Menu.Items className="absolute flex flex-col right-8 mt-4 w-60  bg-white p-8 space-y-8 rounded-xl drop-shadow-medium  text-black  navBefore border border-orange-400 ">
@@ -107,7 +106,6 @@ const Navbar = () => {
                       </Menu.Items>
                     </Menu>              
                   {/* </li> */}
-                </Link>
                 <Link href="/contact">
                   <li className='font-medium normal text-md ease-linear duration-300  hover:text-orange-400'>Contact us</li>
                 </Link>
