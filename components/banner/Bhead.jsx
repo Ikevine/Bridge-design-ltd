@@ -1,18 +1,6 @@
-// import Swiper core and required modules
-import React from 'react';
-import Image from 'next/legacy/image';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { motion } from 'framer-motion'
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+import React from 'react'
 
-import { urlFor } from '@/client';
-
-const Dhero =({dhome:{intro , descr , slider_image}}) => {
+const Bhead = () => {
   return (
     <div className='flex  container p-4 px-16 mx-auto space-x-6 justify-center mt-24'>
         <div className="w-[50%] flex flex-col space-y-4 ">
@@ -24,7 +12,7 @@ const Dhero =({dhome:{intro , descr , slider_image}}) => {
         <img src="tiger.jpg" alt='about hero image' layout='fill'  className='rounded-xl object-cover w-full h-[40rem]'/>
         </div>   
     </div>
- );
-};
+  )
+}
 
-export default Dhero;
+export default Bhead

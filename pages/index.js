@@ -1,10 +1,17 @@
 import testimonial from "@/backend/schemas/testimonial"
-import {Hero , Wedo , Testimonial ,Brand , Wera} from "@/components"
+import {Hero , Wedo , Testimonial ,Brand , Wera } from "@/components"
 import {client } from '../client'
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation } from "swiper";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
 export default function Home({home}) {
   return (
     <>
-
+      
       <Hero shome={home && home[0]}/>
       <div className='p-4 flex  flex-col justify-center items-center min-h-screen'>
         <div className="text-center">
@@ -33,20 +40,53 @@ export default function Home({home}) {
              <video className='h-80 rounded-lg' controls >
                  <source src='' type='video/mp4'/>
              </video>
+             <Swiper
+              spaceBetween={30}
+              
+              // autoplay={{
+              //   delay: 10000,
+              //   disableOnInteraction: false,
+              // }}
+              pagination={{
+                clickable: true,
+              }}
+              navigation={true}
+              modules={[Autoplay, Pagination, Navigation]}
+              className="mySwiper h-72 "
+            >
               {
                 home.length && home.map((data)=>{
                   return(
                     <div key={data._id} className='grid md:grid-cols-3 grid-rows-1 max-w-[60%] mx-auto'>
                       {data.we_are.map((datas)=>{
                         return (
-                          <Wera key={datas._id} datas={datas}/>)//
+                          <SwiperSlide >
+                            <Wera key={datas._id} datas={datas}/>
+                          </SwiperSlide>
+                          )//
                       })}
                     </div>
                   ) 
                 })
               }
+            </Swiper>
           </div>
           {/* testimonial */}
+
+          <Swiper
+              spaceBetween={30}
+              
+              // autoplay={{
+              //   delay: 10000,
+              //   disableOnInteraction: false,
+              // }}
+              pagination={{
+                clickable: true,
+              }}
+              navigation={true}
+              modules={[Autoplay, Pagination, Navigation]}
+              className="mySwiper h-72 "
+            >
 
           {
                 home.length && home.map((data)=>{
@@ -54,26 +94,49 @@ export default function Home({home}) {
                     <div key={data._id} className='grid md:grid-cols-3 grid-rows-1 max-w-[60%] mx-auto'>
                       {data.testimonial.map((datas)=>{
                         return (
-                          <Testimonial key={datas._id} datas={datas}/>)//
+                          <SwiperSlide className="items-center justify-center " >
+                            <Testimonial key={datas._id} datas={datas}/>
+                          </SwiperSlide>
+                          )//
                       })}
                     </div>
                   ) 
                 })
               }
+          </Swiper>
       </div>
 
       <div className="my-4">
         <h1 className="capitalize font-semibold text-center text-2xl text-slate-700">Popular brand work with us</h1>
         <div className="flex justify-between items-center">
+          <Swiper
+              spaceBetween={30}
+              slidesPerView={4}
+              // autoplay={{
+              //   delay: 10000,
+              //   disableOnInteraction: false,
+              // }}
+              pagination={{
+                clickable: true,
+              }}
+              navigation={true}
+              modules={[Autoplay, Pagination, Navigation]}
+              className="mySwiper h-72 "
+            >
           {
             home.length && home.map((data)=>{
               return(
                 data.brand.map((data)=>{
-                    return <Brand key={data._key} data={data}/>  
+                    return(
+                      <SwiperSlide className="items-center justify-center " >
+                        <Brand key={data._key} data={data}/> 
+                      </SwiperSlide>
+                    )  
                 })
               )
             })
           }
+        </Swiper>
         </div>
       </div>
     </>

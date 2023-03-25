@@ -1,6 +1,13 @@
 import React from 'react';
 import { client } from '@/client';
-import {Ahero ,TeamMemb ,Experiance ,Machine} from "@/components"
+import {Ahero ,TeamMemb ,Experiance ,Machine} from "@/components";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation } from "swiper";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
 const About = ({about}) => {
   return (
     <>
@@ -8,14 +15,34 @@ const About = ({about}) => {
       <div className="my-4">
         <h1 className='text-center font-semibold text-2xl capitalize'>Our bestTeam members</h1>
         <div className='flex space-x-3'>
+        <Swiper
+              spaceBetween={30}
+              slidesPerView={2}
+              // autoplay={{
+              //   delay: 10000,
+              //   disableOnInteraction: false,
+              // }}
+              pagination={{
+                clickable: true,
+              }}
+              navigation={true}
+              modules={[Autoplay, Pagination, Navigation]}
+              className="mySwiper"
+            >
           {
             about.map((data)=>{
               return(
               data.member.map((data)=>{
-                return <TeamMemb key={data._id} data={data}/>
+                return (
+                <SwiperSlide>
+                  <TeamMemb key={data._id} data={data}/>
+                </SwiperSlide>
+                )
               })
             )})
-          }   
+          }  
+        </Swiper> 
+
         </div>
       </div>
 

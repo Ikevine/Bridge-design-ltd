@@ -1,7 +1,7 @@
 import React from 'react';
 import { client } from '@/client';
 import { Tab } from '@headlessui/react'
-import { Stab} from '@/components'
+import { Stab , Shero} from '@/components'
 
 
 
@@ -14,10 +14,14 @@ const Sticker = ({stickers,categori}) => {
   
  
   return (
-    <div className='mt-24'>
+   <div className="">
+    <Shero/>
+      
+    <div className='mt-24 max-w-[80%] mx-auto flex flex-col p-4 '>
+      <h1 className='font-bold text-2xl my-4 text-center'>Free Gallery</h1>
       <Tab.Group>
         {/* categories */}
-          <Tab.List>
+          <Tab.List className="">
              {
               categori.map((data)=>{
                 return (
@@ -25,8 +29,8 @@ const Sticker = ({stickers,categori}) => {
                    key={data._id}
                    id={data._id}
                    className={({selected})=>
-                    `whitespace-nowrap rounded-t-lg py-3 px-5 text-sm font-light outline-none md:py-4 md:px-6 md:text-base
-                    ${selected ?"bg-[#35383C] text-white":"border-b-2 border-[#35383C] text-[#747474]"
+                    `px-12 py-2 rounded-tr-2xl rounded-bl-2xl font-semibold text-lg
+                    ${selected ?"bg-orange-400 text-white ease-in duration-400 outline-0":"text-slate-800"
                     }`
                   }
                   >
@@ -39,12 +43,13 @@ const Sticker = ({stickers,categori}) => {
 
       </Tab.List>
           <Tab.Panels className="">
-             <Tab.Panel className="tabPanel flex">{showProducts(0)}</Tab.Panel>
-             <Tab.Panel className="tabPanel">{showProducts(1)}</Tab.Panel>
-             <Tab.Panel className="tabPanel">{showProducts(2)}</Tab.Panel>
+             <Tab.Panel className="tabPanel grid place-items-center grid-cols-5 ">{showProducts(0)}</Tab.Panel>
+             <Tab.Panel className="tabPanel grid place-items-center grid-cols-5 ">{showProducts(1)}</Tab.Panel>
+             <Tab.Panel className="tabPanel grid place-items-center grid-cols-5 ">{showProducts(2)}</Tab.Panel>
           </Tab.Panels>
       </Tab.Group>
     </div>
+  </div>  
   )
 }
 

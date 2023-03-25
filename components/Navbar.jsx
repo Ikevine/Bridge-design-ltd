@@ -56,7 +56,7 @@ const Navbar = () => {
                             {({ active }) => (
                                 <Link
                                 className={`${active && 'font-medium normal text-md   hover:text-orange-400 ease-in duration-500'}`}
-                                href="/"
+                                href="/banner"
                                 >
                                 Signs &amp; Banners
                                 </Link>
@@ -131,7 +131,7 @@ const Navbar = () => {
                             {({ active }) => (
                                 <Link
                                 className={`${active && 'font-medium normal text-md   hover:text-orange-400 ease-in duration-500'}`}
-                                href="/"
+                                href="/banner"
                                 >
                                 Signs &amp; Banners
                                 </Link>
@@ -141,7 +141,7 @@ const Navbar = () => {
                             {({ active }) => (
                                 <Link
                                 className={`${active && 'font-medium  normal text-md ease-linear duration-300   hover:text-orange-400'}`}
-                                href="/"
+                                href="/printing"
                                 >
                                  Printing &amp; Branding
                                 </Link>
@@ -151,7 +151,7 @@ const Navbar = () => {
                             {({ active }) => (
                                 <Link
                                 className={`${active && 'font-medium  normal text-md ease-linear duration-300   hover:text-orange-400'}`}
-                                href="/"
+                                href="/sticker"
                                 >
                                 Promotion materials
                                 </Link>

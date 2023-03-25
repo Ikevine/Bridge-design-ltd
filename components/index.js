@@ -31,3 +31,9 @@ export {default as Pproduct } from './printing/Pproduct';
 // sticker page
 
 export {default as Stab } from './sticker/Stab'
+export {default as Shero} from './sticker/Shero'
+
+// banner page 
+
+export {default as Bproduct} from './banner/Bproduct'
+export {default as Bhead} from './banner/Bhead'

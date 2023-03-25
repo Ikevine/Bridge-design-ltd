@@ -22,7 +22,7 @@ const Contacti = () => {
                <input type="text" placeholder='Enter your last name' className='w-[50%] h-16 p-2 focus:outline-none rounded border-x-2 border-orange-500'/>
             </div>
             <input type="text" placeholder='Enter your Email' className='w-fill h-16 p-2 focus:outline-none rounded border-x-2 border-orange-500'/>
-            <textarea name="" id="" className='w-full h-52 p-2 rounded border-x-2 border-orange-500' placeholder='Enter your messenge'></textarea>
+            <textarea name="" id="" className='focus:outline-none w-full h-52 p-2 rounded border-x-2 border-orange-500' placeholder='Enter your messenge'></textarea>
         </form> 
        </div>
       </div>
