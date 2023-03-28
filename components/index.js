@@ -37,3 +37,7 @@ export {default as Shero} from './sticker/Shero'
 
 export {default as Bproduct} from './banner/Bproduct'
 export {default as Bhead} from './banner/Bhead'
+
+// swiper components
+
+export {default as Swiper_nav} from './swiper_nav'

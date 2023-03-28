@@ -12,6 +12,7 @@ const Navbar = () => {
    const [textcolor, setTextcolor] = useState("white");
    const [bgcolor, setBgcolor] = useState("black");
 
+   const [showside, setShowide] = useState(false)
 
   useEffect(() => {
     
@@ -29,8 +30,9 @@ const Navbar = () => {
     }
    
     window.addEventListener('scroll',ChangeColor);
-  }, [])
+  }, []);
   
+  const showSidei = () => setShowide(!showside);
 
   return (
     <nav style={{backgroundColor:`${bgcolor}`}} className=' fixed top-0 right-0 left-0 text-black  w-screen py-2 px-8 z-[11]'>
@@ -50,8 +52,8 @@ const Navbar = () => {
                   <li className='font-medium normal text-md ease-linear duration-300 hover:text-orange-400'>About us</li>
                 </Link>
                     <Menu>
-                      <Menu.Button className='font-medium normal text-md ease-linear duration-300 hover:text-orange-400 '>Services</Menu.Button>
-                        <Menu.Items className="absolute flex flex-col right-8 mt-4 w-60  bg-white p-8 space-y-8 rounded-xl drop-shadow-medium  text-black  navBefore border border-orange-400 ">
+                      <Menu.Button className='font-medium normal text-md ease-linear duration-300 hover:text-orange-400'>Services</Menu.Button>
+                        <Menu.Items className="absolute flex flex-col right-20   w-60  bg-white p-8 space-y-8 rounded-xl drop-shadow-medium  text-black mt-10 navBefore border border-orange-400" >
                             <Menu.Item>
                             {({ active }) => (
                                 <Link
@@ -112,7 +114,7 @@ const Navbar = () => {
            </ul>
 
            {/* mobile navbar */}
-           <div className='block md:hidden cursor-pointer text-2xl z-[11] ' onClick={showNav}>
+           <div className='block md:hidden cursor-pointer text-2xl z-[11] text-white' onClick={showNav}>
              {nav ? <AiOutlineClose/>:<AiOutlineMenu/>}
            </div>
            <div className={nav?"absolute   top-0  right-0 bottom-0 bg-black text-white z-[10] h-screen w-[80%] ease-in duration-300":"absolute top-0  right-[-100%] bottom-0 bg-black text-white z-[2] h-screen w-[80%] ease-in duration-300"}>

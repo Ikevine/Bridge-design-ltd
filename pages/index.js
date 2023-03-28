@@ -1,5 +1,5 @@
 import testimonial from "@/backend/schemas/testimonial"
-import {Hero , Wedo , Testimonial ,Brand , Wera } from "@/components"
+import {Hero , Wedo , Testimonial ,Brand , Wera ,Swiper_nav} from "@/components"
 import {client } from '../client'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper";
@@ -7,6 +7,7 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+
 
 export default function Home({home}) {
   return (

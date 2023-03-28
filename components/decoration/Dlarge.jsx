@@ -15,3 +15,9 @@ const Dlarge = ({data:{image , dname}}) => {
 }
 
 export default Dlarge
+
+
+
+
+
+

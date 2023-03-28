@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
 body{
   font-family: 'Open Sans', sans-serif;
-   @apply bg-slate-100  m-0 p-0 scroll-smooth scrollbar-thin scrollbar-thumb-rounded-lg  scrollbar-thumb-slate-300 scrollbar-track-slate-700;
+   @apply bg-slate-100  m-0 p-0 scroll-smooth scrollbar-thin scrollbar-thumb-rounded-lg  scrollbar-thumb-slate-300 scrollbar-track-slate-700 overflow-hidden;
    
 }
 
@@ -23,5 +23,12 @@ body{
 }
 .btn_before::before{
   content: '';
-  @apply w-full h-full bg-orange-400 block rounded-full 
+  @apply w-full h-full bg-orange-400  block rounded-full mt-6
+}
+.swiper-pagination-bullet {
+  background-color: aliceblue  !important;
+  opacity: 1 !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #FFA726 !important;
 }

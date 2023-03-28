@@ -9,20 +9,20 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-
+import Swiper_nav from '../swiper_nav'
 import { urlFor } from '@/client';
 
 const Hero =({shome:{intro , descr , slider_image}}) => {
   return (
     <Swiper
       // install Swiper m odules
-      modules={[Navigation, Pagination, Scrollbar, A11y]}
+      modules={[ Pagination,A11y]}
       spaceBetween={50}
+      loop={true}
       slidesPerView={1}
-      navigation
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
-      className="min-h-screen  z-[2] bg-black"
+      className="min-h-screen relative z-[2] bg-black"
     >
       {
         slider_image && slider_image.map((img)=>{
@@ -48,6 +48,7 @@ const Hero =({shome:{intro , descr , slider_image}}) => {
           )
         })
       }
+      <Swiper_nav/>
     </Swiper>
  );
 };
