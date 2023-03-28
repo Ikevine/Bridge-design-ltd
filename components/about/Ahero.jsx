@@ -9,17 +9,16 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-
+import Swiper_nav from '../swiper_nav'
 import { urlFor } from '@/client';
 
 const Ahero =({ahome:{intro , descr , slider_image}}) => {
   return (
     <Swiper
       // install Swiper m odules
-      modules={[Navigation, Pagination, Scrollbar, A11y]}
+      modules={[ Pagination, Scrollbar, A11y]}
       spaceBetween={50}
       slidesPerView={1}
-      navigation
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
       className="min-h-screen  z-[2] bg-black"
@@ -48,6 +47,7 @@ const Ahero =({ahome:{intro , descr , slider_image}}) => {
           )
         })
       }
+      <Swiper_nav/>
     </Swiper>
  );
 };
