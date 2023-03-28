@@ -32,3 +32,14 @@ body{
 .swiper-pagination-bullet-active {
   background-color: #FFA726 !important;
 }
+.carousel.carousel-slider{
+  width: 10%;
+  background-color: orangered;
+}
+.carousel.thumb{
+  width: 10%;
+  height: 50%;
+}
+.carousel{
+  text-align: center;
+}

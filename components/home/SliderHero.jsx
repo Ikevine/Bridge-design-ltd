@@ -30,7 +30,7 @@ const Hero =({shome:{intro , descr , slider_image}}) => {
             <SwiperSlide key={img._key}>
             <div className="relative top-0 right-0 bottom-0 left-0  h-screen">
                <img src={urlFor(img)} alt="slide-image"  className='bg-fixed object-cover  bg-no-repeat object-center h-screen w-full'/>
-                <div className="absolute bg-black/70 top-0 right-0 bottom-0 left-0 flex flex-col justify-center  px-20 ">
+                <div className="absolute bg-black/50 top-0 right-0 bottom-0 left-0 flex flex-col justify-center  px-20 ">
                  <motion.div 
                    initial={{opacity:0, x:1000}}
                    transition={{duration:2,}}
@@ -38,7 +38,7 @@ const Hero =({shome:{intro , descr , slider_image}}) => {
    
                  className="md:w-[60%] flex flex-col md:space-y-8 space-y-6 justify-center md:items-center">
                    <h1 className='text-white  font-semibold md:text-4xl text-2xl tracking-wide md:text-center'>{intro}<span>BRIDGE DESIGN</span></h1>
-                   <p className='text-slate-400 md:ml-10 ml-4 text-sm md:text-lg text-center md:text-start'>{descr}</p>
+                   <p className='text-slate-100 md:ml-10 ml-4 text-sm md:text-lg text-center md:text-start'>{descr}</p>
                     
                     <button className='px-16 py-4 self-center  text-white bg-orange-400 w-fit rounded-md ease-in duration-500 btn_hover text-[1rem]'>Contact us</button>
                  </motion.div> 

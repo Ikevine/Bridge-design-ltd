@@ -14,6 +14,7 @@ export {default as Contacti} from './Contact'
 
 export {default as Ahero } from './about/Ahero';
 export {default as Machine} from './about/Machine';
+export {default as Office} from './about/Office'
 
 // decoration page
 

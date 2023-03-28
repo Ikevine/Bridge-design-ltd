@@ -29,7 +29,7 @@ const Ahero =({ahome:{intro , descr , slider_image}}) => {
             <SwiperSlide key={img._key}>
             <div className="relative top-0 right-0 bottom-0 left-0  h-screen">
                <img src={urlFor(img)} alt="slide-image"  className='bg-fixed object-cover  bg-no-repeat object-center h-screen w-full'/>
-                <div className="absolute bg-black/70 top-0 right-0 bottom-0 left-0 flex flex-col justify-center  px-20 ">
+                <div className="absolute bg-black/50 top-0 right-0 bottom-0 left-0 flex flex-col justify-center  px-20 ">
                  <motion.div 
                    initial={{opacity:0, x:1000}}
                    transition={{duration:2,}}

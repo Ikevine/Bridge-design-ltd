@@ -22,7 +22,7 @@ export default function Home({home}) {
            {
             home.length && home.map((data)=>{
               return(
-                <div key={data._id} className='grid md:grid-cols-4 grid-rows-1 mx-auto'>
+                <div key={data._id} className='grid lg:grid-cols-4 md:grid-cols-2 grid-rows-1 mx-auto'>
                   {data.wedo.map((datas)=>{
                     return (
                       <Wedo key={datas._id} datas={datas}/>)//
@@ -38,7 +38,7 @@ export default function Home({home}) {
       <div className='bg-slate-200 p-2 mb-4 min-h-screen'>
           {/* wera */}
           <div className="flex flex-col  md:flex-row m-10 space-y-4 md:space-x-12 items-center justify-center px-4 mx-auto">
-             <video className='h-80 rounded-lg' controls >
+             <video className='h-[25rem] rounded-lg' controls >
                  <source src='' type='video/mp4'/>
              </video>
              <Swiper
@@ -52,12 +52,12 @@ export default function Home({home}) {
                 clickable: true,
               }}
               modules={[Autoplay, Pagination]}
-              className="mySwiper max-w-[32rem]"
+              className="mySwiper max-w-[28rem] bg-slate-200"
             >
               {
                 home.length && home.map((data)=>{
                   return(
-                    <div key={data._id} className='mx-auto'>
+                    <div key={data._id} className=' mx-auto'>
                       {data.we_are.map((datas)=>{
                         return (
                           <SwiperSlide className="h-80 w-36">
@@ -72,8 +72,13 @@ export default function Home({home}) {
             </Swiper>
           </div>
           {/* testimonial */}
-
-          <Swiper
+          <div className="h-screen flex flex-col items-center justify-center">
+           <div>
+             <h1 className="uppercase font-semibold text-center text-xl text-slate-700">What people say about us</h1>
+             <p className="text-center">what people say about us will make you work with us</p>
+           </div>
+           
+           <Swiper
               spaceBetween={30}
               
               // autoplay={{
@@ -84,12 +89,13 @@ export default function Home({home}) {
                 clickable: true,
               }}
               modules={[Autoplay, Pagination]}
-              className="mySwiper h-72 "
+              className="mySwiper h-72 w-[90%]"
             >
 
           {
                 home.length && home.map((data)=>{
                   return(
+                  
                     <div key={data._id} className='grid md:grid-cols-3 grid-rows-1 max-w-[60%] mx-auto'>
                       {data.testimonial.map((datas)=>{
                         return (
@@ -103,6 +109,7 @@ export default function Home({home}) {
                 })
               }
           </Swiper>
+          </div>
       </div>
 
       <div className="my-4">

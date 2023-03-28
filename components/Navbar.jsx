@@ -49,7 +49,7 @@ const Navbar = () => {
                   <li className='font-medium normal text-md ease-linear duration-300  hover:text-orange-400'>Home</li>
                 </Link>
                 <Link href="/about">
-                  <li className='font-medium normal text-md ease-linear duration-300 hover:text-orange-400'>About us</li>
+                  <li className='font-medium normal text-md ease-linear duration-300 hover:text-orange-400' >About us</li>
                 </Link>
                     <Menu>
                       <Menu.Button className='font-medium normal text-md ease-linear duration-300 hover:text-orange-400'>Services</Menu.Button>
@@ -115,15 +115,15 @@ const Navbar = () => {
 
            {/* mobile navbar */}
            <div className='block md:hidden cursor-pointer text-2xl z-[11] text-white' onClick={showNav}>
-             {nav ? <AiOutlineClose/>:<AiOutlineMenu/>}
+             {nav ? <AiOutlineClose className='text-white'/>:<AiOutlineMenu className='text-white'/>}
            </div>
            <div className={nav?"absolute   top-0  right-0 bottom-0 bg-black text-white z-[10] h-screen w-[80%] ease-in duration-300":"absolute top-0  right-[-100%] bottom-0 bg-black text-white z-[2] h-screen w-[80%] ease-in duration-300"}>
             <ul className='mt-16 flex flex-col space-y-10 px-8' style={{color:`${textcolor}`}}>
-                <Link href="/">
-                  <li className='font-2xl normal text-md ease-linear duration-300   hover:text-orange-400 text-xl'>Home</li>
+                <Link href="/" onClick={showNav}>
+                  <li className='font-2xl normal text-md ease-linear duration-300   hover:text-orange-400 text-xl' onClick={showNav}>Home</li>
                 </Link>
                 <Link href="/">
-                  <li className='font-2xl normal text-md ease-linear duration-300  hover:text-orange-400 text-xl'>About us</li>
+                  <li className='font-2xl normal text-md ease-linear duration-300  hover:text-orange-400 text-xl' onClick={showNav}>About us</li>
                 </Link>
                 <Link href="/">
                     <Menu>
@@ -134,6 +134,7 @@ const Navbar = () => {
                                 <Link
                                 className={`${active && 'font-medium normal text-md   hover:text-orange-400 ease-in duration-500'}`}
                                 href="/banner"
+                                onClick={showNav}
                                 >
                                 Signs &amp; Banners
                                 </Link>
@@ -144,6 +145,7 @@ const Navbar = () => {
                                 <Link
                                 className={`${active && 'font-medium  normal text-md ease-linear duration-300   hover:text-orange-400'}`}
                                 href="/printing"
+                                onClick={showNav}
                                 >
                                  Printing &amp; Branding
                                 </Link>
@@ -154,6 +156,7 @@ const Navbar = () => {
                                 <Link
                                 className={`${active && 'font-medium  normal text-md ease-linear duration-300   hover:text-orange-400'}`}
                                 href="/sticker"
+                                onClick={showNav}
                                 >
                                 Promotion materials
                                 </Link>
@@ -164,6 +167,7 @@ const Navbar = () => {
                                 <Link
                                 className={`${active && 'font-medium  normal text-md ease-linear duration-300   hover:text-orange-400'}`}
                                 href="/gift"
+                                onClick={showNav}
                                 >
                                 Gift Making
                                 </Link>
@@ -175,7 +179,7 @@ const Navbar = () => {
                   {/* </li> */}
                 </Link>
                 <Link href="/contact">
-                  <li className='font-medium  normal text-md ease-linear duration-300   hover:text-orange-400 text-xl'>Contact us</li>
+                  <li className='font-medium  normal text-md ease-linear duration-300   hover:text-orange-400 text-xl' onClick={showNav}>Contact us</li>
                 </Link>
             </ul>              
            </div>

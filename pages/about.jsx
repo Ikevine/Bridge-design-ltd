@@ -1,6 +1,6 @@
 import React from 'react';
 import { client } from '@/client';
-import {Ahero ,TeamMemb ,Experiance ,Machine} from "@/components";
+import {Ahero ,TeamMemb ,Experiance ,Machine ,Office} from "@/components";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper";
 // Import Swiper styles
@@ -13,7 +13,7 @@ const About = ({about}) => {
     <>
       <Ahero ahome={about && about[0]}/>
       <div className="my-4">
-        <h1 className='text-center font-semibold text-2xl capitalize'>Our bestTeam members</h1>
+        <h1 className='text-center container mx-auto font-semibold text-2xl capitalize'>Our bestTeam members</h1>
         <div className='flex space-x-3'>
         <Swiper
               spaceBetween={30}
@@ -63,7 +63,9 @@ const About = ({about}) => {
             }
         </div>
       </div>
-      
+      <div className="">
+        <Office />
+      </div>
     </>
   )
 }

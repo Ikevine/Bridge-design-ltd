@@ -8,6 +8,9 @@ module.exports = {
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  screens:{
+    'md':"500px"
+  },
   theme: {
     extend: {},
   },
