@@ -32,9 +32,9 @@ const Hero =({shome:{intro , descr , slider_image}}) => {
                <img src={urlFor(img)} alt="slide-image"  className='bg-fixed object-cover  bg-no-repeat object-center h-screen w-full'/>
                 <div className="absolute bg-black/50 top-0 right-0 bottom-0 left-0 flex flex-col justify-center  px-20 ">
                  <motion.div 
-                   initial={{opacity:0, x:1000}}
+                   initial={{opacity:0}}
                    transition={{duration:2,}}
-                   whileInView={{opacity:1, x:0, type:'tween'}}
+                   whileInView={{opacity:1, type:'tween'}}
    
                  className="md:w-[60%] flex flex-col md:space-y-8 space-y-6 justify-center md:items-center">
                    <h1 className='text-white  font-semibold md:text-4xl text-2xl tracking-wide md:text-center'>{intro}<span>BRIDGE DESIGN</span></h1>

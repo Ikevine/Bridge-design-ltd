@@ -17,6 +17,11 @@ export default{
             name:"simage",
             title:"Simage",
             type:"image"
+        },
+        {
+            name:"page",
+            title:"Page",
+            type:"string"
         }
     ]
 }

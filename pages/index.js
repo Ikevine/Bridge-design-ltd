@@ -14,7 +14,7 @@ export default function Home({home}) {
     <>
       
       <Hero shome={home && home[0]}/>
-      <div className='p-4 flex  flex-col justify-center items-center min-h-screen'>
+      <div className='p-4 md:px-16 flex  flex-col justify-center items-center min-h-screen'>
         <div className="text-center">
           <h1 className='font-semibold text-xl capitalize p-2'>Services we provide</h1>
           <p className='text-slate-800 text-center'>Lorem we do it ipsum dolor sit amet consectetur adipisicing elit. Perferendis aut minima odit expedita, delectus sequi.</p>
@@ -22,7 +22,7 @@ export default function Home({home}) {
            {
             home.length && home.map((data)=>{
               return(
-                <div key={data._id} className='grid lg:grid-cols-4 md:grid-cols-2 grid-rows-1 mx-auto'>
+                <div key={data._id} className='grid lg:grid-cols-4 md:grid-cols-2 grid-rows-1 mx-auto p-4'>
                   {data.wedo.map((datas)=>{
                     return (
                       <Wedo key={datas._id} datas={datas}/>)//
@@ -35,9 +35,9 @@ export default function Home({home}) {
 
       {/* testimonial and objextiver section */}
 
-      <div className='bg-slate-200 p-2 mb-4 min-h-screen'>
+      <div className='bg-slate-200 p-2 mb-4 h-auto'>
           {/* wera */}
-          <div className="flex flex-col  md:flex-row m-10 space-y-4 md:space-x-12 items-center justify-center px-4 mx-auto">
+          <div className="flex flex-col  lg:flex-row mt-10 space-y-8 md:space-x-12 items-center justify-center px-4 mx-auto">
              <video className='h-[25rem] rounded-lg' controls >
                  <source src='' type='video/mp4'/>
              </video>
@@ -71,6 +71,10 @@ export default function Home({home}) {
               }
             </Swiper>
           </div>
+
+
+
+
           {/* testimonial */}
           <div className="h-screen flex flex-col items-center justify-center">
            <div>

@@ -12,8 +12,10 @@ import testimonial from "./testimonial";
 import wedo from "./wedo";
 import wera from "./wera";
 import sticker from "./Sticker";
-import scate from './Scategories'
+import scate from './Scategories';
+import hbanner from "./hbanner";
+import bannerp from "./bannerp";
 export const schemaTypes = [
     home,about,decoration,gift,printing,brand,dproduct,machine,member,product,testimonial,wedo,wera,
-    sticker,scate
+    sticker,scate,hbanner,bannerp
 ]

@@ -12,6 +12,7 @@ const About = ({about}) => {
   return (
     <>
       <Ahero ahome={about && about[0]}/>
+      {/* team member  */}
       <div className="my-4 px-10">
         <h1 className='text-center container mx-auto font-semibold text-2xl capitalize'>Our bestTeam members</h1>
         <div className='flex space-x-3'>
@@ -25,7 +26,6 @@ const About = ({about}) => {
               pagination={{
                 clickable: true,
               }}
-              navigation={true}
               modules={[Autoplay, Pagination, Navigation]}
               className="mySwiper"
             >

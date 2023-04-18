@@ -1,0 +1,22 @@
+export default {
+    name:"bannerp",
+    title:"Bannerp",
+    type:"document",
+    fields:[
+        {
+           name:"image",
+           title:"Image",
+           type:"image" 
+        },
+        {
+            name:"name",
+            title:"Name",
+            type:"string"
+        },
+        {
+            name:"descr",
+            title:"Descr",
+            type:"string"
+        }
+    ]
+}
