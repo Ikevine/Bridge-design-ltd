@@ -4,10 +4,9 @@ export default{
     type:"document",
     fields:[
         {
-            name:"slider_image",
-            title:"Slider_image",
-            type:"array",
-            of:[{type:"image"}],
+            name:"image",
+            title:"Image",
+            type:"image",
 
         },
         {
@@ -23,23 +22,11 @@ export default{
         
         //showing the decoration we do
         {
-            name:"left",
-            title:"Left",
+            name:"products",
+            title:"Products",
             type:"array",
             of:[{type:"product"}]
 
         },
-        {
-            name:"middle",
-            title:"Middle",
-            type:"array",
-            of:[{type:"product"}]
-        },
-        {
-            name:"right",
-            title:"right",
-            type:"array",
-            of:[{type:"product"}]
-        }
    ] 
 }

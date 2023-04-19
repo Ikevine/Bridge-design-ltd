@@ -20,23 +20,10 @@ export default{
         },
 
         //body of the printing page
+       
         {
-            name:"left",
-            title:"Left",
-            type:"array",
-            of:[{type:"product"}]
-
-        },
-        {
-            name:"middle",
-            title:"Middle",
-            type:"array",
-            of:[{type:"product"}]
-
-        },
-        {
-            name:"right",
-            title:"right",
+            name:"products",
+            title:"Products",
             type:"array",
             of:[{type:"product"}]
         }

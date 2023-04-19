@@ -22,7 +22,7 @@ export default{
             name:"product",
             title:"Product",
             type:"array",
-            of:[{type:"bannerp"}]
+            of:[{type:"product"}]
         }
         
     ]

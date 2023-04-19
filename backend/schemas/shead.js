@@ -1,22 +1,22 @@
 export default{
-    name:"product",
-    title:"Product",
+    name:"shead",
+    title:"Shead",
     type:"document",
     fields:[
         {
-            name:"dname",
-            title:"Dname",
-            type:"string",
+            name:"header",
+            title:"Header",
+            type:"string"
         },
         {
             name:"descr",
             title:"Descr",
-            type:"string"
+            type:"text"
         },
         {
             name:"image",
             title:"Image",
             type:"image"
-        }
+        },
     ]
 }

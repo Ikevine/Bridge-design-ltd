@@ -21,10 +21,10 @@ export default{
 
         //showing the product
         {
-            name:"product",
-            title:"Product",
+            name:"products",
+            title:"Products",
             type:"array",
-            of:[{type:"dproduct"}]
+            of:[{type:"product"}]
         }
     ]
 }
