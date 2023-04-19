@@ -3,9 +3,7 @@ import { client } from '@/client';
 import { Tab } from '@headlessui/react'
 import { Stab , Shero} from '@/components'
 
-
-
-const Sticker = ({stickers,categori}) => {
+const Sticker = ({stickers,categori ,shead}) => {
 
   const showProducts = (category) => {
     return stickers.filter((sticker) => sticker.categories._ref === categori[category]._id)
@@ -15,7 +13,7 @@ const Sticker = ({stickers,categori}) => {
  
   return (
    <div className="">
-    <Shero/>
+    <Shero data={shead && shead[0]}/>
       
     <div className='mt-24 max-w-[80%] mx-auto flex flex-col p-4 '>
       <h1 className='font-bold text-2xl my-4 text-center'>Free Gallery</h1>
@@ -61,11 +59,15 @@ export const getServerSideProps = async () => {
 
   const categQuery ='*[_type == "scate"]';
   const categori = await client.fetch(categQuery);
+  
+  const sheadQuery ='*[_type == "shead"]';
+  const shead = await client.fetch(sheadQuery);
 
   return {
      props:{
      stickers,
      categori,
+     shead,
   }
  }
 }

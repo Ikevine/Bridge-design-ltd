@@ -22,10 +22,10 @@ export default function Home({home}) {
            {
             home.length && home.map((data)=>{
               return(
-                <div key={data._id} className='grid lg:grid-cols-4 md:grid-cols-2 grid-rows-1 mx-auto p-4'>
+                <div key={data._id} className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 mx-auto p-4'>
                   {data.wedo.map((datas)=>{
                     return (
-                      <Wedo key={datas._id} datas={datas}/>)//
+                      <Wedo key={datas._id} datas={datas}/>)
                   })}
                 </div>
                ) 

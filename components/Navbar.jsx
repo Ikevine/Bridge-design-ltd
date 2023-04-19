@@ -122,17 +122,17 @@ const Navbar = () => {
                 <Link href="/" onClick={showNav}>
                   <li className='font-2xl normal text-md ease-linear duration-300   hover:text-orange-400 text-xl' onClick={showNav}>Home</li>
                 </Link>
-                <Link href="/">
+                <Link href="/about">
                   <li className='font-2xl normal text-md ease-linear duration-300  hover:text-orange-400 text-xl' onClick={showNav}>About us</li>
                 </Link>
                 <Link href="/">
                     <Menu>
                       <Menu.Button className='font-2xl normal text-md ease-linear duration-300  hover:text-orange-400 text-xl'>Services</Menu.Button>
-                        <Menu.Items className="absolute flex flex-col md:right-8  mt-4 w-60  bg-white p-8 space-y-8 rounded-xl drop-shadow-2xl text-black  navBefore border border-orange-400 ">
+                        <Menu.Items className="absolute flex flex-col md:right-8  mt-4 w-80   bg-white p-8 space-y-8 rounded-xl drop-shadow-2xl text-black  navBefore border border-orange-400 ">
                             <Menu.Item>
                             {({ active }) => (
                                 <Link
-                                className={`${active && 'font-medium normal text-md   hover:text-orange-400 ease-in duration-500'}`}
+                                className={`${active && 'font-medium normal  hover:text-orange-400 ease-in duration-500'} text-lg`}
                                 href="/banner"
                                 onClick={showNav}
                                 >
@@ -143,7 +143,7 @@ const Navbar = () => {
                             <Menu.Item>
                             {({ active }) => (
                                 <Link
-                                className={`${active && 'font-medium  normal text-md ease-linear duration-300   hover:text-orange-400'}`}
+                                className={`${active && 'font-medium  normal text-md ease-linear duration-300   hover:text-orange-400'} text-lg`}
                                 href="/printing"
                                 onClick={showNav}
                                 >
@@ -154,7 +154,17 @@ const Navbar = () => {
                             <Menu.Item>
                             {({ active }) => (
                                 <Link
-                                className={`${active && 'font-medium  normal text-md ease-linear duration-300   hover:text-orange-400'}`}
+                                className={`${active && 'font-medium normal text-md ease-linear duration-300  hover:text-orange-400'} text-lg`}
+                                href="/decoration"
+                                >
+                                 Decoration
+                                </Link>
+                            )}
+                            </Menu.Item>
+                            <Menu.Item>
+                            {({ active }) => (
+                                <Link
+                                className={`${active && 'font-medium  normal text-md ease-linear duration-300   hover:text-orange-400'} text-lg`}
                                 href="/sticker"
                                 onClick={showNav}
                                 >
@@ -165,7 +175,7 @@ const Navbar = () => {
                             <Menu.Item>
                             {({ active }) => (
                                 <Link
-                                className={`${active && 'font-medium  normal text-md ease-linear duration-300   hover:text-orange-400'}`}
+                                className={`${active && 'font-medium  normal text-md ease-linear duration-300   hover:text-orange-400'} text-lg`}
                                 href="/gift"
                                 onClick={showNav}
                                 >

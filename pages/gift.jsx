@@ -6,15 +6,20 @@ const Gift = ({gift}) => {
     <div className='mt-24'>
        <Ghead data={gift && gift[0]}/>
        <Gwedo/>
-       <div className="flex space-x-4">
-        {
-          gift.map((data)=>{
-            return (data.product.map((data)=>{
-              return <Gprod key={data._key} data={data}/>
-            })
-          )})
-        }
-       </div>
+       {
+         gift.map((data)=>{
+          return (
+          <div className="grid grid-cols-2
+            md:grid-cols-3 lg:grid-cols-4  px-4 md:px-0 md:max-w-[90%] lg:max-w-[70%] mx-auto">
+            {data.products.map((bdata)=>{
+              return (
+                <Gprod key={bdata.key} data={bdata}/>
+              )
+            })}
+          </div>  
+          ) 
+        })
+      }
     </div>
   )
 }

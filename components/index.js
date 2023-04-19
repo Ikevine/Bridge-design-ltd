@@ -20,13 +20,9 @@ export {default as Office} from './about/Office'
 
 export {default as Dhome } from './decoration/Dhome';
 export {default as Dproduct} from './decoration/Dproduct';
-export {default as Dmiddle }from './decoration/Dmiddle';
-export {default as Dlarge} from './decoration/Dlarge';
 
 // printing page
 export {default as Phead} from './printing/Phead';
-export {default as Plarge } from './printing/Plarge';
-export {default as Pmiddle } from './printing/Pmiddle';
 export {default as Pproduct } from './printing/Pproduct';
 
 // sticker page

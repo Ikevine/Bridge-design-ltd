@@ -1,43 +1,25 @@
 import React from 'react'
 import { client } from '@/client'
-import { Phead ,Plarge ,Pmiddle ,Pproduct  } from '@/components'
+import { Phead ,Pproduct  } from '@/components'
 const Printing = ({printing}) => {
   return (
     <div className='mt-24'>
       <Phead data={printing && printing[0]}/>  
-      {/* post  */}
-      <div className='flex space-x-4 max-w-[80%] mx-auto justify-center m-2'>
-       {/* left side  */}
-          <div className="flex flex-col space-y-4">
-             {
-               printing.map((data)=>{
-                return data.left.map((data)=>{
-                  return <Pproduct key={data._key} data={data}/>
-                })
-               })
-             }
-          </div>
-        {/* middle side */}
-          <div className="flex flex-col  space-y-4 mt-8">
-          {
-               printing.map((data)=>{
-                return data.middle.map((data)=>{
-                  return <Pmiddle key={data._key} data={data}/>
-                })
-               })
-             }
-          </div>
-        {/* right side */}
-          <div className="flex flex-col space-y-4">
-            {
-               printing.map((data)=>{
-                return data.right.map((data)=>{
-                  return <Plarge key={data._key} data={data}/>
-                })
-               })
-            }
-          </div>
-      </div>
+      {/* product  */}
+        {
+         printing.map((data)=>{
+          return (
+          <div className="grid grid-cols-2
+            md:grid-cols-3 lg:grid-cols-4  px-4 md:px-0 md:max-w-[90%] lg:max-w-[70%] mx-auto">
+            {data.products.map((bdata)=>{
+              return (
+                <Pproduct key={bdata.key} data={bdata}/>
+              )
+            })}
+          </div>  
+          ) 
+        })
+      }
     </div>
   )
 }
