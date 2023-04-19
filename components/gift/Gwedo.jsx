@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/legacy/image'
 const Gwedo = () => {
   return (
-    <div className='flex flex-col-reverse  flex-row space-x-6 w-[80%] mx-auto m-6'>
+    <div className='flex flex-col-reverse space-x-6 w-[80%] mx-auto m-6'>
         <div className="relative md:w-[70%] h-72">
             <Image src="/tiger.jpg" alt='gift we made' layout='fill' objectFit='cover' className='rounded-lg'/>
         </div>
