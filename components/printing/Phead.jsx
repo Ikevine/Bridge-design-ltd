@@ -6,7 +6,7 @@ const Phead = ({data:{header ,descr ,image}}) => {
         <div className="md:w-[50%]  flex flex-col space-y-4 ">
             <h1 className='font-bold text-2xl md:text-2xl text-center tracking-wide'>{header}</h1>
             <p className='text-slate-700 font-semibold mt-2 '>{descr}</p>
-            <button className='px-16 py-2 md:py-4  text-white bg-orange-400 w-fit rounded-md ease-in duration-500 btn_hover text-[1rem]'>Contact us</button>
+            <button className='px-16 py-2 md:py-4  text-white bg-orange-400 w-fit rounded-md transition ease-in-out delay-150 duration-300 btn_hover text-[1rem]'>Contact us</button>
         </div>
         <img src={urlFor(image)} alt='about hero image' layout='fill'  className='rounded-xl object-cover w-full h-80 md:w-[45%] md:h-[50%]'/> 
     </div>

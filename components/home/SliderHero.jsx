@@ -37,7 +37,7 @@ const Hero =({shome:{intro , descr , slider_image}}) => {
                    whileInView={{opacity:1, type:'tween'}}
    
                  className="md:w-[60%] flex flex-col md:space-y-8 space-y-6 justify-center md:items-center">
-                   <h1 className='text-white  font-semibold md:text-4xl text-2xl tracking-wide md:text-center'>{intro}<span>BRIDGE DESIGN</span></h1>
+                   <h1 className='text-white  font-semibold md:text-4xl text-3xl tracking-wide md:text-center capitalize'>{intro}</h1>
                    <p className='text-slate-100 md:ml-10 ml-4 text-sm md:text-lg text-center md:text-start'>{descr}</p>
                     
                     <button className='px-16 py-4 self-center  text-white bg-orange-400 w-fit rounded-md ease-in duration-500 btn_hover text-[1rem]'>Contact us</button>
