@@ -16,7 +16,7 @@ export default function Home({home}) {
       <Hero shome={home && home[0]}/>
       <div className='p-4 md:px-16 flex  flex-col justify-center items-center min-h-screen'>
         <div className="text-center">
-          <h1 className='font-semibold text-xl capitalize p-2'>Services we provide</h1>
+          <h1 className='font-semibold text-2xl text-slate-800 capitalize p-2'>Services we provide</h1>
           <p className='text-slate-800 text-center'>Lorem we do it ipsum dolor sit amet consectetur adipisicing elit. Perferendis aut minima odit expedita, delectus sequi.</p>
         </div>
            {
