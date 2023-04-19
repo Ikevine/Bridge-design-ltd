@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 const About = ({about , office}) => {
-  
+
   return (
     <>
       <Ahero ahome={about && about[0]}/>
@@ -38,7 +38,7 @@ const About = ({about , office}) => {
               // }}
               pagination={{clickable: true,}}
               modules={[Autoplay, Pagination]}
-              className="mySwiper  w-[80%] md:w-[90%]  mx-auto"
+              className="mySwiper  w-[100%] md:w-[90%]  mx-auto"
             >
           {
             about.length && about.map((data)=>{
