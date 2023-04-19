@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 const About = ({about , office}) => {
-  console.log(office);
+  
   return (
     <>
       <Ahero ahome={about && about[0]}/>
