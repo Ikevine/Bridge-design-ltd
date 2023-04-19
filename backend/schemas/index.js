@@ -13,8 +13,9 @@ import wera from "./wera";
 import sticker from "./Sticker";
 import scate from './Scategories';
 import hbanner from "./hbanner";
-import shead from './shead'
+import shead from './shead';
+import office from "./office";
 export const schemaTypes = [
     home,about,decoration,gift,printing,brand,machine,member,product,testimonial,wedo,wera,
-    sticker,scate,hbanner,shead
+    sticker,scate,hbanner,shead,office
 ]

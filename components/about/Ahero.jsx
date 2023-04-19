@@ -1,6 +1,6 @@
 // import Swiper core and required modules
 import React from 'react';
-import Image from 'next/legacy/image';
+import Link from 'next/link';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { motion } from 'framer-motion'
@@ -41,7 +41,7 @@ const Ahero =({ahome:{intro , descr , slider_image}}) => {
                    <Link href="/contact">
                      <button className='px-16 py-2 md:py-4  text-white bg-orange-400 w-fit rounded-md transition ease-in-out delay-150 duration-300 btn_hover text-[1rem]'>Contact us</button>
                    </Link>
-                   
+
                  </motion.div> 
                 </div>
             </div>

@@ -22,7 +22,7 @@ export default function Home({home}) {
            {
             home.length && home.map((data)=>{
               return(
-                <div key={data._id} className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 mx-auto p-4'>
+                <div key={data._id} className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 mx-auto p-4 b'>
                   {data.wedo.map((datas)=>{
                     return (
                       <Wedo key={datas._id} datas={datas}/>)
@@ -35,10 +35,14 @@ export default function Home({home}) {
 
       {/* testimonial and objextiver section */}
 
-      <div className='bg-slate-200 p-2 mb-4 h-auto'>
+    <div className='bg-slate-200 p-2 mb-4 h-auto'>
+        <div className="text-center">
+          <h1 className='font-semibold text-2xl text-slate-700 capitalize p-2'>What you need to know</h1>
+          <p className='text-slate-800 text-center'>Lorem we do it ipsum dolor sit amet consectetur adipisicing elit. Perferendis aut minima odit expedita, delectus sequi.</p>
+        </div>
           {/* wera */}
           <div className="flex flex-col  lg:flex-row mt-10 space-y-8 md:space-x-12 items-center justify-center px-4 mx-auto">
-             <video className='h-[25rem] rounded-lg' controls >
+             <video className='h-[20rem] rounded-lg' controls >
                  <source src='' type='video/mp4'/>
              </video>
              <Swiper
@@ -77,10 +81,10 @@ export default function Home({home}) {
 
           {/* testimonial */}
           <div className="h-screen flex flex-col items-center justify-center">
-           <div>
-             <h1 className="uppercase font-semibold text-center text-xl text-slate-700">What people say about us</h1>
-             <p className="text-center">what people say about us will make you work with us</p>
-           </div>
+            <div className="text-center">
+              <h1 className='font-semibold text-2xl text-slate-700 capitalize p-2'>What people say about us</h1>
+              <p className='text-slate-800 text-center'>Lorem we do it ipsum dolor sit amet consectetur adipisicing elit. Perferendis aut minima odit expedita, delectus sequi.</p>
+            </div>
            
            <Swiper
               spaceBetween={30}
@@ -100,11 +104,11 @@ export default function Home({home}) {
                 home.length && home.map((data)=>{
                   return(
                   
-                    <div key={data._id} className='grid md:grid-cols-3 grid-rows-1 max-w-[60%] mx-auto'>
+                    <div key={data._id}>
                       {data.testimonial.map((datas)=>{
                         return (
-                          <SwiperSlide className="items-center justify-center " >
-                            <Testimonial key={datas._id} datas={datas}/>
+                          <SwiperSlide className="w-full items-center justify-center" >
+                             <Testimonial key={datas._id} datas={datas}/>
                           </SwiperSlide>
                           )//
                       })}
@@ -140,14 +144,14 @@ export default function Home({home}) {
               // }}
               pagination={{clickable: true,}}
               modules={[Autoplay, Pagination]}
-              className="mySwiper h-72 "
+              className="mySwiper  w-[80%] mx-auto"
             >
           {
             home.length && home.map((data)=>{
               return(
                 data.brand.map((data)=>{
                     return(
-                      <SwiperSlide className="items-center justify-center " >
+                      <SwiperSlide className="w-full items-center justify-center pb-12 md:pb-0" >
                         <Brand key={data._key} data={data}/> 
                       </SwiperSlide>
                     )  

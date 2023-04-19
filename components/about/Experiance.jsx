@@ -2,10 +2,10 @@ import React from 'react'
 
 const Experiance = ({experiance:{header,edescr}}) => {
   return (
-        <div className="w-[95%] mx-auto p-2 md:p-6 text-white mb-8 ">
+        <div className="w-[95%] mx-auto p-2 md:p-6 text-white mb-8">
             {/* experiance video and description */}
-            <div className="flex flex-col-reverse gap-6 justify-center md:flex-row ">
-                <video src="" controls className='md:w-[60%]'>
+            <div className="flex flex-col gap-6 justify-center md:flex-row ">
+                <video className='h-[20rem] rounded-lg' controls >
                     <source src='' type='video/mp4'/>
                 </video>
                 <div className=" description flex flex-col space-y-6 md:w-[40%]">
