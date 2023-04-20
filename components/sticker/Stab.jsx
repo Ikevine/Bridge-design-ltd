@@ -4,7 +4,7 @@ import {HiArrowRight} from 'react-icons/hi'
 import Link from 'next/link';
 const  Stab=({data:{name , image , descr}}) =>{
   return (
-   <div className='px-2 border border-orange-400 m-2 flex flex-col space-y-2 rounded-md'>
+   <div className='p-2 border border-orange-400 m-2 flex flex-col space-y-2 rounded-md w-[80%]'>
       <img src={urlFor(image)} alt='product image' layout='fill'  className='rounded-md object-cover w-full h-[80%] md:h-[60%] file:overflow-hidden'/>
       <div className="text-slate-600 space-y-3 flex flex-col ">
          <h4 className='font-semibold text-md text-slate-800'>{name}</h4>

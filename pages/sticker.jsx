@@ -16,10 +16,10 @@ const Sticker = ({stickers,categori ,shead}) => {
     <Shero data={shead && shead[0]}/>
       
     <div className='mt-24 max-w-[80%] mx-auto flex flex-col p-4 '>
-      <h1 className='font-bold text-2xl my-4 text-center'>Free Gallery</h1>
+      <h1 className='font-bold text-2xl my-4 text-center'>{shead.header_gallery}</h1>
       <Tab.Group>
         {/* categories */}
-          <Tab.List className="">
+          <Tab.List className="mb-4 self-center">
              {
               categori.map((data)=>{
                 return (
@@ -27,8 +27,8 @@ const Sticker = ({stickers,categori ,shead}) => {
                    key={data._id}
                    id={data._id}
                    className={({selected})=>
-                    `px-12 py-2 rounded-tr-2xl rounded-bl-2xl font-semibold text-lg
-                    ${selected ?"bg-orange-400 text-white ease-in duration-400 outline-0":"text-slate-800"
+                    `px-10 py-1 rounded-tr-2xl rounded-bl-2xl font-semibold text-base
+                    ${selected ?"bg-orange-300 text-white ease-in duration-400 outline-0":"text-slate-900"
                     }`
                   }
                   >
@@ -40,7 +40,7 @@ const Sticker = ({stickers,categori ,shead}) => {
             
 
       </Tab.List>
-          <Tab.Panels className="">
+          <Tab.Panels className="grid">
              <Tab.Panel className="tabPanel grid place-items-center grid-cols-5 ">{showProducts(0)}</Tab.Panel>
              <Tab.Panel className="tabPanel grid place-items-center grid-cols-5 ">{showProducts(1)}</Tab.Panel>
              <Tab.Panel className="tabPanel grid place-items-center grid-cols-5 ">{showProducts(2)}</Tab.Panel>
