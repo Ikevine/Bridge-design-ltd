@@ -18,7 +18,7 @@ const Contacti = () => {
   return (
     <div className=" w-screen h-auto mt-12  bg-slate-200 flex flex-col justify-center items-center p-8">
         <div>
-           <h1>Contact me</h1>
+           <h1 className='font-semibold text-2xl text-slate-800 capitalize p-2'>Contact me</h1>
         </div>
         {/* boxes goes here */}
            <div className="flex flex-col md:flex-row md:space-y-0 space-y-4 md:space-x-4 w-full justify-center items-center">
