@@ -10,12 +10,12 @@ export default function Bproduct({data:{image , name , descr}}) {
        <div className="text-slate-600 space-y-3 flex flex-col ">
           <h4 className='font-semibold text-md text-slate-800'>{name}</h4>
           <p className='text-sm '>{descr}</p>
-          <div className="p-4 self-center flex space-x-2 justify-center items-center">
-            <span>Contact me</span> 
-            <Link href='/contact'>
-             <span className='text-orange-400'><HiArrowRight/></span>
-            </Link>
-          </div>
+          <Link href='/contact'>
+            <div className="p-4 self-center flex space-x-2 justify-center items-center">
+              <span>Contact me</span>
+              <span className='text-orange-400'><HiArrowRight/></span>
+            </div>
+          </Link>
        </div>
     </div>
   )

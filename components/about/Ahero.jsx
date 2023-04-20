@@ -36,7 +36,7 @@ const Ahero =({ahome:{intro , descr , slider_image}}) => {
                    whileInView={{opacity:1, type:'tween'}}
    
                  className="md:w-[60%] flex flex-col md:space-y-8 space-y-6 justify-center md:items-center">
-                   <h1 className='text-white font-semibold md:text-4xl text-3xl tracking-wide md:text-center capitalize'>{intro}<span>BRIDGE DESIGN</span></h1>
+                   <h1 className='text-white font-semibold md:text-4xl text-3xl tracking-wide md:text-center capitalize'>{intro}</h1>
                    <p className='text-slate-400 md:ml-10 ml-4 text-sm md:text-lg text-center md:text-start'>{descr}</p>
                    <Link href="/contact">
                      <button className='px-16 py-2 md:py-4  text-white bg-orange-400 w-fit rounded-md transition ease-in-out delay-150 duration-300 btn_hover text-[1rem]'>Contact us</button>

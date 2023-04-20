@@ -15,7 +15,7 @@ const About = ({about , office}) => {
       <Ahero ahome={about && about[0]}/>
       {/* team member  */}
       <div className="my-4 px-10">
-        <h1 className='text-center container mx-auto font-semibold text-2xl capitalize mb-4'>Our bestTeam members</h1>
+        <h1 className='text-center container mx-auto font-semibold text-2xl capitalize mb-4'>{about[0].head_team}</h1>
         <div className="flex justify-between items-center px-4">
           <Swiper
 
@@ -60,14 +60,14 @@ const About = ({about , office}) => {
       {/* about and machine section here */}
       <div className="w-screen h-fill p-4 bg-[#02251D]">
         <div className="text-center mb-6">
-          <h1 className='font-semibold text-2xl text-white capitalize p-2'>What you need to know</h1>
-          <p className='text-slate-300 text-center'>Lorem we do it ipsum dolor sit amet consectetur adipisicing elit. Perferendis aut minima odit expedita, delectus sequi.</p>
+          <h1 className='font-semibold text-2xl text-white capitalize p-2'>{about[0].head_exp}</h1>
+          <p className='text-slate-300 text-center'>{about[0].descr_exp}</p>
         </div>
         <Experiance experiance={about && about[0]}/>
        
           {/* machines available */}
         <div className="">
-            <h1 className='capitalize font-semibold text-2xl text-orange-400 text-center my-4'>Super machine in bridge design</h1>
+            <h1 className='capitalize font-semibold text-2xl text-orange-400 text-center my-4'>{about[0].head_machine}</h1>
             {
             about.map((data)=>{
               return(

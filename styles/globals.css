@@ -23,7 +23,7 @@ body{
 }
 .btn_before::before{
   content: '';
-  @apply w-full h-full bg-orange-400  block rounded-full mt-6
+  @apply w-full h-full bg-orange-400  block rounded-full
 }
 .swiper-pagination-bullet {
   background-color: rgb(118, 131, 143)  !important;

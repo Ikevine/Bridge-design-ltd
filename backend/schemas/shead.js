@@ -18,5 +18,10 @@ export default{
             title:"Image",
             type:"image"
         },
+        {
+            name:"header_gallery",
+            title:"Header_gallery",
+            type:"string"
+        }
     ]
 }

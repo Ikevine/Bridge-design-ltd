@@ -5,7 +5,7 @@ const Gift = ({gift}) => {
   return (
     <div className='mt-24'>
        <Ghead data={gift && gift[0]}/>
-       <Gwedo/>
+       <Gwedo data={gift}/>
        {
          gift.map((data)=>{
           return (

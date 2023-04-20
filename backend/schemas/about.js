@@ -33,7 +33,12 @@ export default{
             type:"string"
         },
         // end of about head // starting our team members
+        {
+            name:"head_team",
+            title:"Head_team",
+            type:"string"
 
+        },
         {
             name:"member",
             title:"Member",
@@ -42,6 +47,23 @@ export default{
         },
 
         // machine enter
+        {
+            name:"head_exp",
+            title:"Head_exp",
+            type:"string"
+
+        },
+        {
+            name:"descr_exp",
+            title:"descr_exp",
+            type:"string"
+        },
+        {
+            name:"head_machine",
+            title:"Head_machine",
+            type:"string"
+
+        },
         {
             name:"machine",
             title:"Machine",

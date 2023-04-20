@@ -15,19 +15,24 @@ export default{
             type:"image"
         },
         {
+           name:"role",
+           title:"Role",
+           type:"string"
+        },
+        {
             name:"facebook",
             title:"Facebook",
-            type:"slug"
+            type:"string"
         },
         {
             name:"instagram",
             title:"Instagram",
-            type:"slug"
+            type:"string"
         },
         {
-            name:"whatsapp",
-            title:"Whatsapp",
-            type:"slug"
+            name:"linkedin",
+            title:"Linkedin",
+            type:"string"
         },
     ]
 

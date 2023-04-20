@@ -1,8 +1,7 @@
-import testimonial from "@/backend/schemas/testimonial"
-import {Hero , Wedo , Testimonial ,Brand , Wera ,Swiper_nav} from "@/components"
+import {Hero , Wedo , Testimonial ,Brand , Wera } from "@/components"
 import {client } from '../client'
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, Navigation } from "swiper";
+import { Autoplay, Pagination} from "swiper";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -16,8 +15,8 @@ export default function Home({home}) {
       <Hero shome={home && home[0]}/>
       <div className='p-4 md:px-16 flex  flex-col justify-center items-center min-h-screen'>
         <div className="text-center">
-          <h1 className='font-semibold text-2xl text-slate-800 capitalize p-2'>Services we provide</h1>
-          <p className='text-slate-800 text-center'>Lorem we do it ipsum dolor sit amet consectetur adipisicing elit. Perferendis aut minima odit expedita, delectus sequi.</p>
+          <h1 className='font-semibold text-2xl text-slate-800 capitalize p-2'>{home[0].head_wedo}</h1>
+          <p className='text-slate-800 text-center'>{home[0].descr_wedo}</p>
         </div>
            {
             home.length && home.map((data)=>{
@@ -37,8 +36,8 @@ export default function Home({home}) {
 
     <div className='bg-slate-200 p-2 mb-4 h-auto'>
         <div className="text-center">
-          <h1 className='font-semibold text-2xl text-slate-700 capitalize p-2'>What you need to know</h1>
-          <p className='text-slate-800 text-center'>Lorem we do it ipsum dolor sit amet consectetur adipisicing elit. Perferendis aut minima odit expedita, delectus sequi.</p>
+          <h1 className='font-semibold text-2xl text-slate-700 capitalize p-2'>{home[0].head_wera}</h1>
+          <p className='text-slate-800 text-center'>{home[0].descr_wera}</p>
         </div>
           {/* wera */}
           <div className="flex flex-col  lg:flex-row mt-10 space-y-8 md:space-x-12 items-center justify-center px-4 mx-auto">
@@ -82,8 +81,8 @@ export default function Home({home}) {
           {/* testimonial */}
           <div className="h-screen flex flex-col items-center justify-center">
             <div className="text-center">
-              <h1 className='font-semibold text-2xl text-slate-700 capitalize p-2'>What people say about us</h1>
-              <p className='text-slate-800 text-center'>Lorem we do it ipsum dolor sit amet consectetur adipisicing elit. Perferendis aut minima odit expedita, delectus sequi.</p>
+              <h1 className='font-semibold text-2xl text-slate-700 capitalize p-2'>{home[0].head_test}</h1>
+              <p className='text-slate-800 text-center'>{home[0].descr_test}</p>
             </div>
            
            <Swiper
@@ -121,7 +120,7 @@ export default function Home({home}) {
       </div>
 
       <div className="my-4">
-        <h1 className="capitalize font-semibold text-center text-2xl text-slate-700">Popular brand work with us</h1>
+        <h1 className="capitalize font-semibold text-center text-2xl text-slate-700">{home[0].head_brand}</h1>
         <div className="flex justify-between items-center">
           <Swiper
               spaceBetween={30}
