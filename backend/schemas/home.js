@@ -18,7 +18,7 @@ export default
         {
             name:"descr",
             title:"Descr",
-            type:"string"
+            type:"text"
         },
 
         // header done moving on to what we do
@@ -31,7 +31,7 @@ export default
         {
             name:"descr_wedo",
             title:"descr_wedo",
-            type:"string"
+            type:"text"
         },
         {
             name:"wedo",
@@ -50,7 +50,7 @@ export default
         {
             name:"descr_wera",
             title:"descr_wera",
-            type:"string"
+            type:"text"
         },
         {
             name:"we_are",
@@ -69,7 +69,7 @@ export default
         {
             name:"descr_test",
             title:"descr_test",
-            type:"string"
+            type:"text"
         },
 
         {

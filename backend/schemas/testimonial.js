@@ -11,7 +11,7 @@ export default{
         {
             name:"says",
             title:"Says",
-            type:"string"
+            type:"text"
         },
         {
             name:"image",

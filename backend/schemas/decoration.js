@@ -17,7 +17,7 @@ export default{
         {
             name:"descr",
             title:"Descr",
-            type:"string"
+            type:"text"
         },
         
         //showing the decoration we do

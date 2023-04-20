@@ -11,7 +11,7 @@ export default{
         {
             name:"descr",
             title:"Descr",
-            type:"string"
+            type:"text"
         },
         {
             name:"slider_image",
@@ -30,7 +30,7 @@ export default{
         {
             name:"edescr",
             title:"Edescr",
-            type:"string"
+            type:"text"
         },
         // end of about head // starting our team members
         {
@@ -56,7 +56,7 @@ export default{
         {
             name:"descr_exp",
             title:"descr_exp",
-            type:"string"
+            type:"text"
         },
         {
             name:"head_machine",
