@@ -1,5 +1,6 @@
 import React from 'react'
-import { urlFor } from '@/client'
+import { urlFor } from '@/client';
+import Link from 'next/link';
 const Ghead = ({data:{header , descr ,image}}) => {
   return (
     <div className='items-center flex flex-col space-y-4 md:space-y-0 md:flex-row p-4 px-8 mx-auto md:space-x-12 justify-center mt-24 mb-8 md:max-w-[80%]'>

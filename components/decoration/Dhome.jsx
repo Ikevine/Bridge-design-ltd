@@ -1,7 +1,7 @@
 // import Swiper core and required modules
 import React from 'react';
 import { urlFor } from '@/client';
-
+import Link from 'next/link';
 const Dhero =({dhome:{intro , descr , image}}) => {
   return (
     <div className='items-center flex flex-col space-y-12 md:space-y-0 md:flex-row  p-4 px-6 mx-auto md:space-x-12 justify-center md:max-w-[80%] mt-24 mb-8 md:h-screen'>

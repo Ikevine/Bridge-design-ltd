@@ -16,6 +16,6 @@ import hbanner from "./hbanner";
 import shead from './shead';
 import office from "./office";
 export const schemaTypes = [
-    home,about,decoration,gift,printing,brand,machine,member,product,testimonial,wedo,wera,
-    sticker,scate,hbanner,shead,office
+    home,about,decoration,gift,printing,sticker,hbanner,brand,office,machine,member,product,testimonial,wedo,wera,
+    scate,shead
 ]

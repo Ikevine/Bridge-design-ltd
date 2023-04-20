@@ -151,16 +151,19 @@ const Navbar = () => {
                                 </Link>
                             )}
                             </Menu.Item>
+
                             <Menu.Item>
                             {({ active }) => (
                                 <Link
                                 className={`${active && 'font-medium normal text-md ease-linear duration-300  hover:text-orange-400'} text-lg`}
                                 href="/decoration"
+                                onClick={showNav}
                                 >
                                  Decoration
                                 </Link>
                             )}
                             </Menu.Item>
+
                             <Menu.Item>
                             {({ active }) => (
                                 <Link

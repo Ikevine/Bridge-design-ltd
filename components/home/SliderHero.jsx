@@ -1,7 +1,6 @@
 // import Swiper core and required modules
 import React from 'react';
-import Image from 'next/legacy/image';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { motion } from 'framer-motion'
 // Import Swiper styles
@@ -11,7 +10,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import Swiper_nav from '../swiper_nav'
 import { urlFor } from '@/client';
-
+import Link from 'next/link';
 const Hero =({shome:{intro , descr , slider_image}}) => {
   return (
     <Swiper
@@ -39,7 +38,9 @@ const Hero =({shome:{intro , descr , slider_image}}) => {
                  className="md:w-[60%] flex flex-col md:space-y-8 space-y-6 justify-center md:items-center">
                    <h1 className='text-white  font-semibold md:text-4xl text-3xl tracking-wide md:text-center capitalize'>{intro}</h1>
                    <p className='text-slate-100 md:ml-10 ml-4 text-sm md:text-lg text-center md:text-start'>{descr}</p>
-                    <button className='px-16 py-4 self-center  text-white bg-orange-400 w-fit rounded-md ease-in duration-500 btn_hover text-[1rem]'>Contact us</button>
+                   <Link href="/contact">
+                     <button className='px-16 py-2 md:py-4  text-white bg-orange-400 w-fit rounded-md transition ease-in-out delay-150 duration-300 btn_hover text-[1rem]'>Contact us</button>
+                   </Link>
                  </motion.div> 
                 </div>
             </div>
