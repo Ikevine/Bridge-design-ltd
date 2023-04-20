@@ -61,9 +61,9 @@ export default function Home({home}) {
                 home.length && home.map((data)=>{
                   return(
                     <div key={data._id} className=' mx-auto'>
-                      {data.we_are.map((datas)=>{
+                      {data.we_are.map((datas , index)=>{
                         return (
-                          <SwiperSlide className="h-80 w-36">
+                          <SwiperSlide key={index} className="h-80 w-36">
                             <Wera key={datas._id} datas={datas}/>
                           </SwiperSlide>
                           )//
@@ -104,9 +104,9 @@ export default function Home({home}) {
                   return(
                   
                     <div key={data._id}>
-                      {data.testimonial.map((datas)=>{
+                      {data.testimonial.map((datas , index)=>{
                         return (
-                          <SwiperSlide className="w-full items-center justify-center" >
+                          <SwiperSlide key={index} className="w-full items-center justify-center" >
                              <Testimonial key={datas._id} datas={datas}/>
                           </SwiperSlide>
                           )//
@@ -148,9 +148,9 @@ export default function Home({home}) {
           {
             home.length && home.map((data)=>{
               return(
-                data.brand.map((data)=>{
+                data.brand.map((data , index)=>{
                     return(
-                      <SwiperSlide className="w-full items-center justify-center pb-12 md:pb-0" >
+                      <SwiperSlide key={index} className="w-full items-center justify-center pb-12 md:pb-0" >
                         <Brand key={data._key} data={data}/> 
                       </SwiperSlide>
                     )  

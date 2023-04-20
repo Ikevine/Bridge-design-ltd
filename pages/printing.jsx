@@ -7,9 +7,9 @@ const Printing = ({printing}) => {
       <Phead data={printing && printing[0]}/>  
       {/* product  */}
         {
-         printing.map((data)=>{
+         printing.map((data , index)=>{
           return (
-          <div className="grid grid-cols-2
+          <div key={index} className="grid grid-cols-2
             md:grid-cols-3 lg:grid-cols-4  px-4 md:px-0 md:max-w-[90%] lg:max-w-[70%] mx-auto">
             {data.products.map((bdata)=>{
               return (

@@ -43,9 +43,9 @@ const About = ({about , office}) => {
           {
             about.length && about.map((data)=>{
               return(
-                data.member.map((data)=>{
+                data.member.map((data , index)=>{
                     return(
-                      <SwiperSlide className="w-full items-center justify-center pb-12 md:pb-0" >
+                      <SwiperSlide key={index} className="w-full items-center justify-center pb-12 md:pb-0" >
                         <TeamMemb key={data._key} data={data}/> 
                       </SwiperSlide>
                     )  

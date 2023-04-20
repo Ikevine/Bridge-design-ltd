@@ -6,9 +6,9 @@ const Banner = ({banner}) => {
    <div className='px-2 md:px-0'>
      <Bhead hbanner={banner && banner[0]}/>
      {
-       banner.map((data)=>{
+       banner.map((data,index)=>{
         return (
-         <div className="grid grid-cols-2
+         <div key={index} className="grid grid-cols-2
           md:grid-cols-3 lg:grid-cols-4  px-4 md:px-0 md:max-w-[90%] lg:max-w-[70%] mx-auto">
           {data.product.map((bdata)=>{
             return (

@@ -8,9 +8,9 @@ const Office = ({data:{header , descr , image}}) => {
     <Carousel className='main-slide p-6 max-w-2xl' showArrows={false}>
             
               {
-                image.map((data)=>{
+                image.map((data , index)=>{
                   return(
-                   <div className=""> 
+                   <div key={index}> 
                      <img src={urlFor(data)} alt="office_image" />
                    </div>  
                   )
