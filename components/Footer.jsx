@@ -1,8 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
+import { useRef } from 'react';
 import {GrFacebookOption , GrInstagram , GrLinkedinOption} from 'react-icons/gr'
 import { HiArrowSmRight } from 'react-icons/hi';
-
+import emailjs from '@emailjs/browser';
 const Footer = () => {
    const form = useRef();
 
@@ -58,7 +59,7 @@ const Footer = () => {
            <h3 className='font-bold '>Keep in Touch</h3>
            <form ref={form} onSubmit={sendEmail} className="relative h-8 bg-white ">
                <input type="text" name='subscribe' placeholder='Enter your email' className='focus:outline-none focus:border-b-4 text-black p-2 transition-colors focus:border-b-orange-400 w-full h-full'/>
-               <span className='absolute bg-orange-400 top-0 bottom-0 right-0 flex justify-center items-center text-xl px-2 rounded-tl-lg rounded-bl-lg'><HiArrowSmRight/></span>
+               <button type='submit' className='absolute bg-orange-400 top-0 bottom-0 right-0 flex justify-center items-center text-xl px-2 rounded-tl-lg rounded-bl-lg'><HiArrowSmRight/></button>
            </form>
            <p className='w-72 text-slate-300'>Sign up to get our notification every day on  Lorem, ipsum dolor.</p>
          </div>
