@@ -84,16 +84,7 @@ const Navbar = () => {
                                 </Link>
                             )}
                             </Menu.Item>
-                            <Menu.Item>
-                            {({ active }) => (
-                                <Link
-                                className={`${active && 'font-medium normal text-md ease-linear duration-300  hover:text-orange-400'}`}
-                                href="/sticker"
-                                >
-                                Promotion materials
-                                </Link>
-                            )}
-                            </Menu.Item>
+                           
                             <Menu.Item>
                             {({ active }) => (
                                 <Link
@@ -164,17 +155,6 @@ const Navbar = () => {
                             )}
                             </Menu.Item>
 
-                            <Menu.Item>
-                            {({ active }) => (
-                                <Link
-                                className={`${active && 'font-medium  normal text-md ease-linear duration-300   hover:text-orange-400'} text-lg`}
-                                href="/sticker"
-                                onClick={showNav}
-                                >
-                                Promotion materials
-                                </Link>
-                            )}
-                            </Menu.Item>
                             <Menu.Item>
                             {({ active }) => (
                                 <Link

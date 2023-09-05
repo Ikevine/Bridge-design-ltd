@@ -59,6 +59,18 @@ export default
             type:"array",
             of:[{type:"wera"}]
         },
+        // about us
+        {
+            name:"about",
+            title:"about",
+            type:"string"
+
+        },
+        {
+            name:"descr_about",
+            title:"descr_about",
+            type:"text"
+        },
 
         // testimonial section start here
         {

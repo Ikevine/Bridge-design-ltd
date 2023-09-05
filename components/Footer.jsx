@@ -20,7 +20,7 @@ const Footer = () => {
          {/* linked list */}
           <div className="">
              <h3 className='font-bold mb-2'>Quick Links</h3>
-             <ul classNclassName='font-bold mb-2flex flex-col space-y-1 ml-2'>
+             <ul className='font-bold mb-2flex flex-col space-y-1 ml-2'>
               <Link href='/'>
                  <li className='hover:text-orange-400 duration-500 ease-in-out'>Home</li>
               </Link>

@@ -78,9 +78,7 @@ const About = ({about , office}) => {
             }
         </div>
       </div>
-      {/* <div className="">
-        <Office data={office.length && office[0]}/>
-      </div> */}
+      
     </>
   )
 }

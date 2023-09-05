@@ -14,12 +14,6 @@ export default{
             type:"text",
         },
         {
-            name:"simage",
-            title:"Simage",
-            type:"image",
-            options:{hotspot: true}
-        },
-        {
             name:"page",
             title:"Page",
             type:"string"

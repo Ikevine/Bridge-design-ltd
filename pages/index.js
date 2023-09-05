@@ -18,12 +18,12 @@ export default function Home({home}) {
           <p className='text-slate-800 text-center'>{home[0].descr_wedo}</p>
         </div>
            {
-            home.length && home.map((data)=>{
+            home.length && home.map((data , index)=>{
               return(
-                <div key={data._id} className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 mx-auto p-4 b'>
-                  {data.wedo.map((datas)=>{
+                <div key={index} className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 mx-auto p-4 b'>
+                  {data.wedo.map((datas,index)=>{
                     return (
-                      <Wedo key={datas._id} datas={datas}/>)
+                      <Wedo key={index} datas={datas}/>)
                   })}
                 </div>
                ) 
@@ -33,10 +33,15 @@ export default function Home({home}) {
 
       {/* testimonial and objextiver section */}
 
+    
+
     <div className='bg-slate-200 p-2 mb-4 h-auto'>
+
+        
         <div className="text-center">
           <h1 className='font-semibold text-2xl text-slate-700 capitalize p-2'>{home[0].head_wera}</h1>
           <p className='text-slate-800 text-center'>{home[0].descr_wera}</p>
+          
         </div>
           {/* wera */}
           <div className="flex flex-col  lg:flex-row mt-10 space-y-8 md:space-x-12 items-center justify-center px-4 mx-auto">

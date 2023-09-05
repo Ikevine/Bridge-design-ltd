@@ -23,17 +23,17 @@ export default{
         {
             name:"facebook",
             title:"Facebook",
-            type:"string"
+            type:"url"
         },
         {
             name:"instagram",
             title:"Instagram",
-            type:"string"
+            type:"url"
         },
         {
             name:"linkedin",
             title:"Linkedin",
-            type:"string"
+            type:"url"
         },
     ]
 
