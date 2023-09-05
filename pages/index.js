@@ -1,7 +1,6 @@
 import {Hero , Wedo , Testimonial ,Brand , Wera } from "@/components"
 import {client } from '../client'
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination} from "swiper";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -54,7 +53,7 @@ export default function Home({home}) {
               pagination={{
                 clickable: true,
               }}
-              modules={[Autoplay, Pagination]}
+             
               className="mySwiper max-w-[28rem] bg-slate-200"
             >
               {
@@ -95,7 +94,7 @@ export default function Home({home}) {
               pagination={{
                 clickable: true,
               }}
-              modules={[Autoplay, Pagination]}
+              
               className="mySwiper h-72 w-[90%]"
             >
 
@@ -142,7 +141,6 @@ export default function Home({home}) {
               //   disableOnInteraction: false,
               // }}
               pagination={{clickable: true,}}
-              modules={[Autoplay, Pagination]}
               className="mySwiper  w-[80%] mx-auto"
             >
           {

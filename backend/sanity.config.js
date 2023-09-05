@@ -7,7 +7,7 @@ export default defineConfig({
   name: 'default',
   title: 'bridgedesign',
 
-  projectId: 'ymnl6y40',
+  projectId: 'jh9jxb3d',
   dataset: 'production',
 
   plugins: [deskTool(), visionTool()],

@@ -16,7 +16,8 @@ export default{
         {
             name:"image",
             title:"Image",
-            type:"image"
+            type:"image",
+            options:{hotspot: true}
         },
 
         //body of the printing page

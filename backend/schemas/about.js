@@ -18,7 +18,7 @@ export default{
             title:"Slider_image",
             type:"array",
             of:[{type:"image"}],
-
+            options:{hotspot: true}
         },
         
          //experiance show
@@ -74,7 +74,8 @@ export default{
           name:"office",
           title:"Office",
           type:"array",
-          of:[{type:"image"}] 
+          of:[{type:"image"}],
+          options:{hotspot: true}
         }
     ]
 }

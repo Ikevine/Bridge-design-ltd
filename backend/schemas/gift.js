@@ -16,7 +16,8 @@ export default{
         {
             name:"image",
             title:"Image",
-            type:"image"
+            type:"image",
+            options:{hotspot: true}
         },
 
         //showing the product
@@ -46,7 +47,8 @@ export default{
         {
             name:"update",
             title:"Updata",
-            type:"image"
+            type:"image",
+            options:{hotspot: true}
         }
     ]
 }

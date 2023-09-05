@@ -11,17 +11,20 @@ export default{
         {
             name:"left",
             title:"Left",
-            type:"image"
+            type:"image",
+            options:{hotspot: true}
         },
         {
             name:"middle",
             title:"Middle",
-            type:"image"
+            type:"image",
+            options:{hotspot: true}
         },
         {
             name:"right",
             title:"Right",
-            type:"image"
+            type:"image",
+            options:{hotspot: true}
         }
     ]
 }

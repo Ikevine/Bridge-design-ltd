@@ -9,6 +9,7 @@ export default
             title:"Slider_image",
             type:"array",
             of:[{type:"image"}],
+            options:{hotspot: true}
         },
         {
             name:"intro",

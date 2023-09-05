@@ -6,7 +6,8 @@ export default{
         {
             name:"single_brand",
             title:"Single_brand",
-            type:"image"
+            type:"image",
+            options:{hotspot: true}
         }
     ]
 }
