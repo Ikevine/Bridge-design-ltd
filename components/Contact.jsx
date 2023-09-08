@@ -38,7 +38,7 @@ const Contacti = () => {
               <div className=' flex flex-col gap-2 justify-center items-center p-3 w-[70%] md:w-[20%] self-center bg-slate-900 text-slate-100 rounded-md cursor-pointer hover:drop-shadow-xl'>
                  <span className='flex items-center justify-center space-x-2 font-semibold text-lg'><MdLocationOn/><p>Location</p></span>
                  <h4>Street KN2st</h4>
-                 <h4>NDARA ARCADE 1 building</h4>
+                 <h4>NDARU ARCADE 1 building</h4>
                  <h1> 3rd Floor romm b<sub>3</sub>-02 </h1>
               </div>
 
